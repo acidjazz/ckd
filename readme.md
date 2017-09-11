@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/acidjazz/ckd/master/static/android-chrome-192x192.png" alt="CKD Logo"/>
+  <img src="https://raw.githubusercontent.com/acidjazz/ckd/master/static/share.jpg" alt="CKD Logo"/>
 </p>
 
 > Cathering Kwong Design
