@@ -34,8 +34,8 @@ yarn dev
 
 ## Deployment
 Continuous Deployment is setup using the [git-flow](http://nvie.com/posts/a-successful-git-branching-model/) workflow with [aeonian](https://github.com/acidjazz/aeonian) via [Circle-CI](https://circleci.com/gh/acidjazz/ckd)
-* Branch [development](https://github.com/acidjazz/ckd/tree/development) merges deploy to http://development.weareapartments.org/
-* Branch [staging](https://github.com/acidjazz/ckd/tree/staging) merges deploy to http://staging.weareapartments.org/
-* Branch [master](https://github.com/acidjazz/ckd/tree/master) merges deploy to http://weareapartments.org/
+* Branch [development](https://github.com/acidjazz/ckd/tree/development) merges deploy to http://development.catherinekwong.com/
+* Branch [staging](https://github.com/acidjazz/ckd/tree/staging) merges deploy to http://staging.catherinekwong.com/
+* Branch [master](https://github.com/acidjazz/ckd/tree/master) merges deploy to http://catherinekwong.com/
 
 
