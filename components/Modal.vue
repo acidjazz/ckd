@@ -1,13 +1,18 @@
 <template lang="pug">
-.modal.is-active
-  .modal-background
-  .modal-content
-    .content coming soon
+transition(name="animodal")
+  .modal.is-active(v-if="modal")
+    .modal-background(@click="$store.commit('modalOff')")
+    .modal-content
+      .content coming soon
 </template>
 
 <script>
 export default {
-
+  computed: {
+    modal () {
+      return this.$store.state.modal
+    },
+  },
 }
 </script>
 
@@ -47,10 +52,29 @@ export default {
 
 .content
   padding 30px
+  border-radius 5px
   background-color white
   text-transform uppercase
   font-size 35px
   text-align center
   display block
+
+.animodal-enter-active, .animodal-leave-active
+  transition opacity 0.5s ease 0s
+
+.animodal-enter-active > .modal-content, .animodal-leave-active > .modal-content
+  transition transform 0.4s ease 0.1s, opacity 0.4s ease 0.1s
+.animodal-leave-active > .modal-content
+  transition transform 0.2s ease 0s, opacity 0.2s ease 0s
+
+.animodal-enter, .animodal-leave-to
+  opacity 0
+  > .modal-content
+    transform scale(0.9)
+    opacity 0
+
+@media all and (min-width: 1px) and (max-width: 1000px)
+  .modal-content
+    width 90%
 
 </style>

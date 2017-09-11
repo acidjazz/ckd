@@ -12,8 +12,8 @@
       .copy 9.4.1.0.3
 
     .socials
-      a.social.social_pinterest pinterest
-      a.social.social_instagram instagram
+      a.social.social_pinterest(@click="$store.commit('modalOn')") pinterest
+      a.social.social_instagra(@click="$store.commit('modalOn')") instagram
 </template>
 
 <style lang="stylus">

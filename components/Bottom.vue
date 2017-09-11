@@ -2,9 +2,9 @@
 #Bottom
   .container
     .menu
-      a.option inquire
+      a.option(@click="$store.commit('modalOn')") inquire
       .clear
-      a.option press
+      a.option(@click="$store.commit('modalOn')") press
       .clear
       .copy &copy; CATHERINE KWONG DESIGN, 2011
       .copy SITE BY DESIGNSAKE STUDIO
@@ -62,7 +62,20 @@
             background-color black
             color white
 
+@media all and (min-width: 1px) and (max-width: 1000px)
+  #Bottom
+    padding 20px 10px
+    > .container
+      text-align center
+      > .menu
+        float none
+      > .address
+        float none
+        > .socials
+          padding 20px 0 0 0
+          > .separator,
+          > .social
+            float none
+            display inline-block
 
 </style>
-
-

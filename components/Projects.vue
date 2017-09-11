@@ -20,4 +20,9 @@
     text-transform uppercase
     text-align center
     padding 120px 0
+@media all and (min-width: 1px) and (max-width: 1000px)
+  #Projects > .container
+    > .title
+      float none
+      text-align center
 </style>
