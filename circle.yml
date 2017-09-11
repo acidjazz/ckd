@@ -1,0 +1,18 @@
+
+machine:
+  environment:
+    PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+  timezone:
+    America/Los_Angeles
+  node:
+    version: 8.1.2
+
+dependencies:
+  override:
+    - yarn
+
+deployment:
+  production: 
+    branch: production
+    commands:
+      - yarn run production
