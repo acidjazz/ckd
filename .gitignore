@@ -1,0 +1,17 @@
+# general
+.DS_Store
+
+# structure
+*.swp
+
+# Dependency directory
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist

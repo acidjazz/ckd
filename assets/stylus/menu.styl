@@ -1,0 +1,51 @@
+.burger
+  cursor pointer
+  position fixed
+  top 60px
+  right 60px
+  clear both
+  width 40px
+  height 40px
+  z-index 150
+  &.on > .lines > span
+    background-color white
+  &.on > .lines > span:nth-child(1)
+    top 18px
+    width 0%
+    left 50%
+  &.on > .lines > span:nth-child(2)
+    transform rotate(45deg)
+  &.on > .lines > span:nth-child(3)
+    transform rotate(-45deg)
+  &.on > .lines > span:nth-child(4)
+    top 18px
+    width 0%
+    left 50%
+
+  > .lines
+    position relative
+    width 100%
+    height 100%
+
+    > span
+      display block
+      position absolute
+      height 3px
+      border-radius 9px
+      width 100%
+      background-color white
+      opacity 1
+      left 0
+      transition transform 0.25s ease-in-out
+      &:nth-child(1)
+        top 0px
+      &:nth-child(2),
+      &:nth-child(3)
+        top 14px
+      &:nth-child(4)
+        top 28px
+
+@media all and (min-width: 1px) and (max-width: 1000px)
+  .burger
+    top 20px
+    right 20px
