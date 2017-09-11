@@ -13,6 +13,6 @@ dependencies:
 
 deployment:
   production: 
-    branch: production
+    branch: master
     commands:
       - yarn run production
