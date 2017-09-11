@@ -1,4 +1,3 @@
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/acidjazz/ckd/master/static/android-chrome-192x192.png" alt="CKD Logo"/>
 </p>
@@ -10,9 +9,6 @@
 [![CircleCI](https://img.shields.io/circleci/project/github/acidjazz/ckd.svg)](https://circleci.com/gh/acidjazz/ckd/)
 [![Dependency Status](https://gemnasium.com/badges/github.com/acidjazz/ckd.svg)](https://gemnasium.com/github.com/acidjazz/ckd)
 [![aeonian status](https://img.shields.io/badge/%C3%A6onian-deployed-green.svg)](https://github.com/acidjazz/aeonian)
-
-
-
 
 ## Branch Status
 
