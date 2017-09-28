@@ -2,8 +2,8 @@
 #Project.page
   .banner
     .container
-      .image
-        img(:src="`/projects/${project.url}/${project.hero}`")
+      .image(:style="`width: ${project.hero.width}px; height: ${project.hero.height}px;`")
+        img(:src="`/projects/${project.url}/${project.hero.file}`")
       .location.is-h2 {{ project.location }}
 
   .body
@@ -12,11 +12,12 @@
 
   .gallery
     .tile(v-for="image, file in project.images",:class="image.ises")
-      .image(:style="`width: ${image.width}px; height: ${image.height}px; background-image: url(/projects/${project.url}/${file})`")
+      .image(v-in-viewport,:style="`width: ${image.width}px; height: ${image.height}px; background-image: url(/projects/${project.url}/${file})`")
 
 </template>
 
 <style lang="stylus">
+@import '../../assets/stylus/mixins'
 
 #Project
   > .banner
@@ -45,15 +46,21 @@
       &.is-left
         float left
         margin 30px 30px 30px 0
+        > .image
+          inViewport(0)
       &.is-right
         float right
         margin 30px 0 30px 30px
+        > .image
+          inViewport(0.1)
       &.is-clear
         clear both
       &.is-full
         clear both
         margin 30px 0
         overflow auto
+        > .image
+          inViewport(0)
       > .image
         background-size contain
 
@@ -61,7 +68,9 @@
 
 <script>
 import projects from '~/assets/projects.js'
+import inViewportDirective from 'vue-in-viewport-directive'
 export default {
+  directives: { 'in-viewport': inViewportDirective },
   computed:  {
 
     project: function () {
