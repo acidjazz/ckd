@@ -5,5 +5,6 @@ require('aeonian').config({
   },
   environments: {
     production: 'E2IPBARADINIRP',
+    staging: 'E2Y9WMQODAMDG6',
   }
 }).deploy(process.argv[2])

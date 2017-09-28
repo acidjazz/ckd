@@ -1,0 +1,26 @@
+fonts = json('../fonts.json', { hash: true })
+for key, value in fonts
+  .is-{key}
+    font: value
+
+colors = json('../colors.json', { hash: true })
+for key, value in colors
+  .is-{key}
+    color: value
+  .is-bg-{key}
+    background-color: value
+
+.is-uppercase
+  text-transform uppercase
+.has-text-centered
+  text-align center
+
+.clear
+  &:before
+  &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+  zoom: 1 if support-for-ie
+

@@ -58,6 +58,10 @@ module.exports = {
   /*
   ** Build configuration
   */
+  css: [{ src: '~assets/stylus/main.styl', lang: 'stylus' }],
+  plugins: [
+    {src: '~plugins/ga.js', ssr: false},
+  ],
   build: {
     /*
     ** Run ESLINT on save

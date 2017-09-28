@@ -6,12 +6,12 @@
     .logo
       include ../static/logo.svg
 
-    a.address(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new")
+    a.address(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new").is-c1b
       .copy 295 kansas street
       .copy san francisco, ca
       .copy 9.4.1.0.3
 
-    .socials
+    .socials.is-c1b
       a.social.social_pinterest(@click="$store.commit('modalOn')") pinterest
       a.social.social_instagra(@click="$store.commit('modalOn')") instagram
 </template>
@@ -46,9 +46,7 @@
     > .socials,
     > .address
       color white
-      font-family 'Prestige Elite'
       letter-spacing 3px
-      line-height 24px
       text-transform uppercase
       text-decoration none
       position absolute

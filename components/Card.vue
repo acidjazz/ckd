@@ -1,16 +1,15 @@
 <template lang="pug">
-.card
+.card.is-bg-iceberg
   .container
-    .title tailored interests
+    .title.is-froly tailored interests
     .est
-      .year 2011
-      .copy established
-    .copy Catherine Kwong Design specializes in high-end residential and hospitality projects, with an emphasis on modern architecture and custom detailing. The firm brings a fresh approach to elegant, tailored interiors-mixing modern with vintage; high art with personal treasures- to create moments of unexpected beauty.
+      .year.is-c2 2011
+      .copy.is-c3 established
+    .copy.is-c4 Catherine Kwong Design specializes in high-end residential and hospitality projects, with an emphasis on modern architecture and custom detailing. The firm brings a fresh approach to elegant, tailored interiors-mixing modern with vintage; high art with personal treasures- to create moments of unexpected beauty.
     .clear
 </template>
 
 <style lang="stylus">
-json('../assets/colors.json')
 .card
   background-color iceberg
   padding 90px 30px
@@ -18,8 +17,8 @@ json('../assets/colors.json')
     > .title
       display inline-block
       transform rotate(-90deg)
-      color froly
       margin-top 130px
+      letter-spacing 5px
     > .copy
       width 400px
       float right
@@ -28,14 +27,12 @@ json('../assets/colors.json')
     .est
       float right
       > .year
-        font-size 30px
-        letter-spacing 16px
         padding 0 0 10px 0
         text-align center
+        letter-spacing 13px
       > .copy
         text-transform uppercase
         letter-spacing 4px
-        font-size 12px
 
 @media all and (min-width: 1px) and (max-width: 1000px)
   .card

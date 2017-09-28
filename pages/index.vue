@@ -13,7 +13,3 @@ export default {
   components: { Hero, Card, Projects }
 }
 </script>
-
-<style lang="stylus">
-json('../assets/colors.json')
-</style>

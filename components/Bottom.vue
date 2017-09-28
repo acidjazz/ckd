@@ -1,5 +1,5 @@
 <template lang="pug">
-#Bottom
+#Bottom.is-c1sb
   .container
     .menu
       a.option(@click="$store.commit('modalOn')") inquire
@@ -26,8 +26,6 @@
 <style lang="stylus">
 #Bottom
   padding 60px
-  font-family 'Prestige Elite'
-  font-size 12px
   text-transform uppercase
   letter-spacing 3px
   > .container

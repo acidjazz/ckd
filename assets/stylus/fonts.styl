@@ -1,0 +1,32 @@
+fontfaces(dir, fnts, exts)
+  for font in fnts
+    @font-face
+      font-family dir font
+      for ext in exts
+        if ext == 'eot'
+          src url(/fonts/dir/font.eot) format('embedded-opentype')
+        if ext == 'otf'
+          src url(/fonts/dir/font.otf) format('opentype')
+        if ext == 'ttf'
+          src url(/fonts/dir/font.ttf) format('truetype')
+        if ext == 'svg'
+          src url(/fonts/dir/font.svg) format('svg')
+        if ext == 'woff'
+          src url(/fonts/dir/font.woff) format('woff')
+      font-weight normal
+      font-style normal
+
+fnts = standard italic bold bolditalic
+fontfaces(letter-gothic, fnts, ttf)
+
+fnts = standard italic bold bolditalic
+fontfaces(letter-gothic-12-pitch, fnts, ttf)
+
+fnts = standard
+fontfaces(polly, fnts, otf)
+
+fnts = standard bold
+fontfaces(prestige-elite, fnts, ttf)
+
+fnts = standard
+fontfaces(aquilone, fnts, otf)
