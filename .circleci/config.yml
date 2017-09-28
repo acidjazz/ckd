@@ -37,7 +37,6 @@ jobs:
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               yarn run production
             fi
-          command: |
             if [ "${CIRCLE_BRANCH}" == "staging" ]; then
               yarn run staging
             fi
