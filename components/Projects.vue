@@ -7,7 +7,7 @@ section#Projects.section
       a.project(v-for="project, key in projects",:href="`/project/${key}/`")
         .image
           img(:src="`/projects/${project.thumb}`")
-      //.project(v-for="i in 9")
+      a.project(v-for="i in 9",v-if="i !== 1")
         .image
           img(:src="'/projects/CKD_344x290_' + i + '.jpg'")
 </template>
@@ -26,9 +26,14 @@ section#Projects.section
       > .project
         width 33%
         > .image
-          margin 20px
           > img
             width 100%
+        &:nth-child(3n-2) > .image
+          margin 20px 30px 20px 0px
+        &:nth-child(3n-1) > .image
+          margin 20px 15px 20px 15px
+        &:nth-child(3n) > .image
+          margin 20px 0 20px 30px
 @media all and (min-width: 1px) and (max-width: 1000px)
   #Projects > .container
     > .title
