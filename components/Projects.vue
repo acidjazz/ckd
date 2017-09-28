@@ -4,10 +4,10 @@ section#Projects.section
     .title.is-h1.is-uppercase featured projects
     .clear
     .projects
-      a.project(v-for="project, key in projects",:href="`/project/${key}/`")
+      router-link.project(to="/project/brown/")
         .image
-          img(:src="`/projects/${project.thumb}`")
-      a.project(v-for="i in 9",v-if="i !== 1")
+          img(src="/projects/CKD_344x290_3.jpg")
+      a.project(v-for="i in 9",v-if="i !== 3")
         .image
           img(:src="'/projects/CKD_344x290_' + i + '.jpg'")
 </template>

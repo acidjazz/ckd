@@ -1,5 +1,5 @@
 <template lang="pug">
-#Project
+#Project.page
   .banner
     .container
       .image
@@ -62,7 +62,6 @@
 <script>
 import projects from '~/assets/projects.js'
 export default {
-
   computed:  {
 
     project: function () {
