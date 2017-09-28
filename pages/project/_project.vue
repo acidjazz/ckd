@@ -2,8 +2,10 @@
 #Project.page
   .banner
     .container
-      .image(:style="`width: ${project.hero.width}px; height: ${project.hero.height}px;`")
-        img(:src="`/projects/${project.url}/${project.hero.file}`")
+      //.image(:style="`width: ${project.hero.width}px; height: ${project.hero.height}px;`")
+      .image
+        parallax
+          img(:src="`/projects/${project.url}/${project.hero.file}`")
       .location.is-h2 {{ project.location }}
 
   .body
@@ -21,11 +23,11 @@
 
 #Project
   > .banner
-    padding 90px 0
+    padding 120px 0 90px 0
     > .container
-       > .image
-         > img
-           width 100%
+      > .image > .Masthead
+        height 70vh !important
+        min-height 70vh !important
        > .location
          transform rotate(-90deg)
          float left
@@ -69,8 +71,15 @@
 <script>
 import projects from '~/assets/projects.js'
 import inViewportDirective from 'vue-in-viewport-directive'
+import Parallax from 'vue-parallaxy'
 export default {
   directives: { 'in-viewport': inViewportDirective },
+  components: { Parallax },
+  methods: {
+    browser () {
+      return process.browser
+    }
+  },
   computed:  {
 
     project: function () {
@@ -91,6 +100,8 @@ export default {
 
       return project
     }
-  }
+
+  },
+
 }
 </script>
