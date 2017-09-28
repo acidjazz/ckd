@@ -1,4 +1,7 @@
-let colors = 'assets/colors.json'
+
+let projects = require('./assets/projects.js')
+
+let colors = require('./assets/colors.json')
 
 let config = {
   title: 'Catherine Kwong Design',
@@ -8,6 +11,10 @@ let config = {
   keywords: 'design, interior'
 }
 
+let routes = []
+for (let project of Object.keys(projects)) {
+  routes.push(`/project/${project}/`)
+}
 
 module.exports = {
   /*
@@ -76,5 +83,6 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  generate: { routes: routes }
 }
