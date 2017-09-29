@@ -13,7 +13,7 @@ let config = {
 
 let routes = []
 for (let project of Object.keys(projects)) {
-  routes.push(`/project/${project}/`)
+  routes.push(`/project/${project}`)
 }
 
 module.exports = {

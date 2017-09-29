@@ -3,10 +3,15 @@
   .banner
     .container
       //.image(:style="`width: ${project.hero.width}px; height: ${project.hero.height}px;`")
-      .image
+      .image(v-if="browser()")
         parallax
           img(:src="`/projects/${project.url}/${project.hero.file}`")
+      .image(v-else)
+        .Masthead
+          .is-parallax.Masthead__image
+            img(:src="`/projects/${project.url}/${project.hero.file}`")
       .location.is-h2 {{ project.location }}
+
 
   .body
     .title.is-h1b {{ project.title }} 
