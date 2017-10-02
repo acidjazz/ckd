@@ -18,8 +18,14 @@
     .copy {{ project.copy }}
 
   .gallery
-    .tile(v-for="image, file in project.images",:class="image.ises")
-      .image(v-in-viewport,:style="`width: ${image.width}px; height: ${image.height}px; background-image: url(/projects/${project.url}/${file})`")
+    .tile(
+      v-for="image, file in project.images",
+      :class="image.ises"
+      )
+      .image(
+        v-in-viewport,
+        :style="`width: ${image.width}px; height: ${image.height}px; background-image: url(/projects/${project.url}/${file})`"
+      )
 
 </template>
 

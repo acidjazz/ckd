@@ -7,7 +7,12 @@ section#Projects.section
       router-link.project(to="/project/brown/")
         .image
           img(src="/projects/CKD_344x290_3.jpg")
-      a.project(v-for="i in 9",v-if="i !== 3")
+
+      router-link.project(to="/project/pacific/")
+        .image
+          img(src="/projects/CKD_344x290_1.jpg")
+
+      a.project(v-for="i in 9",v-if="i !== 3 && i !== 1")
         .image
           img(:src="'/projects/CKD_344x290_' + i + '.jpg'")
 </template>
