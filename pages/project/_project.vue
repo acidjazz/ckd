@@ -27,6 +27,8 @@
         :style="`width: ${image.width}px; height: ${image.height}px; background-image: url(/projects/${project.url}/${file})`"
       )
 
+    .clear
+
 </template>
 
 <style lang="stylus">

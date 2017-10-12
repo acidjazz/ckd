@@ -4,17 +4,12 @@ section#Projects.section
     .title.is-h1.is-uppercase featured projects
     .clear
     .projects
-      router-link.project(to="/project/brown/")
+      router-link.project(
+        v-for="project in projects",
+        :to="`/project/${project.url}/`",
+        :key="project.url")
         .image
-          img(src="/projects/CKD_344x290_3.jpg")
-
-      router-link.project(to="/project/pacific/")
-        .image
-          img(src="/projects/CKD_344x290_1.jpg")
-
-      a.project(v-for="i in 9",v-if="i !== 3 && i !== 1")
-        .image
-          img(:src="'/projects/CKD_344x290_' + i + '.jpg'")
+          img(:src="`/projects/${project.thumb}`")
 </template>
 
 <style lang="stylus">
