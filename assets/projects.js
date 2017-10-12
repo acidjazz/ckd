@@ -2,9 +2,10 @@ module.exports = {
   brown: {
     url: 'brown',
     thumb: 'CKD_344x290_3.jpg',
-    location: 'LOCATION, CA',
-    title: 'PROJECT TITLE',
-    copy: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed nulla id nulla pellentesque pharetra quis quis lorem. Suspendisse finibus laoreet nibh. Integer ornare interdum rhoncus. Aliquam vestibulum commodo odio eu lacinia. Curabitur vitae ipsum a metus vehicula port- titor ac sodales neque. Nulla vel nibh volutpat, blandit nunc in, luctus dolor. Ut finibus quam eget ornare feu- giat. Sed vehicula vulputate nisl at ullamcorper.',
+    location: 'NAPPA VALLEY, CA',
+    hover: 'TOWN & COUNTRY',
+    title: 'Brown Downtown',
+    copy: "When the team from Brown Estate, one of Napa Valley's finest family wineries, was looking for a space to showcase their award-winning zinfandels, they didn't expect to find it in the middle of Downtown Napa.  But they fell in love-at-first-sight with an expansive industrial space, tucked away on the second floor of the old Napa Valley Register Building.  Exposed brick and blackened steel meet Italian marble and fluted glass, to create an atmosphere of understated glamour.  The result is a tasting room for a new generation: one where music plays, people laugh, and wine is happily shared.",
     hero: {
       file: 'Brown_1216x800px_1.jpg',
       width: 1216,
@@ -31,9 +32,10 @@ module.exports = {
   pacific: {
     url: 'pacific',
     thumb: 'CKD_344x290_1.jpg',
-    location: 'LOCATION, CA',
-    title: 'PROJECT TITLE',
-    copy: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed nulla id nulla pellentesque pharetra quis quis lorem. Suspendisse finibus laoreet nibh. Integer ornare interdum rhoncus. Aliquam vestibulum commodo odio eu lacinia. Curabitur vitae ipsum a metus vehicula port- titor ac sodales neque. Nulla vel nibh volutpat, blandit nunc in, luctus dolor. Ut finibus quam eget ornare feu- giat. Sed vehicula vulputate nisl at ullamcorper.',
+    location: 'PACIFIC HEIGHTS, CA',
+    hover: 'MODERN, CA',
+    title: 'SHOWCASE 2017',
+    copy: "For this year's Decorator Showcase, we decided to design a room for ourselves. One that was elemental and quietly romantic but also layered and rich in meaning. One that feels like what California feels like to us right now.",
     hero: {
       file: 'PacificApts_1216x800px_1.jpg',
       width: 1216,
@@ -100,9 +102,10 @@ module.exports = {
   resma: {
     url: 'resma',
     thumb: 'CKD_344x290_4.jpg',
-    location: 'LOCATION, CA',
-    title: 'PROJECT TITLE',
-    copy: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed nulla id nulla pellentesque pharetra quis quis lorem. Suspendisse finibus laoreet nibh. Integer ornare interdum rhoncus. Aliquam vestibulum commodo odio eu lacinia. Curabitur vitae ipsum a metus vehicula port- titor ac sodales neque. Nulla vel nibh volutpat, blandit nunc in, luctus dolor. Ut finibus quam eget ornare feu- giat. Sed vehicula vulputate nisl at ullamcorper.',
+    location: 'WOODSIDE, CA',
+    hover: 'RETREAT',
+    title: 'MODERN MEETS TRADITIONAL',
+    copy: "What happens when a big-city family with a serious modern art collection moves to the country?  Well, not the country, exactly, but this traditional Tudor-style home is nestled among the hills of Woodside, where you're as likely to see a horse on the road as you are a Tesla.  We used a sophisticated materials palette to update the house for our urbane family, bringing a strong point of view to this classic home.",
     hero: {
       file: 'Woodside_1216x800px_1.jpg',
       width: 1216,
