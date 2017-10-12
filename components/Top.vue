@@ -1,7 +1,11 @@
 <template lang="pug">
 #Top
   .container
-    .burger.off
+    router-link.burger(
+      to="/",
+      @click="on = !on",
+      :class="{off: !on, on: on, white: $store.state.menu === 'white', black: $store.state.menu === 'black'}"
+    )
       .lines
         span
         span
@@ -9,20 +13,39 @@
         span
 </template>
 
+<script>
+
+export default {
+  data () {
+    return {
+      on: false,
+    }
+  }
+}
+</script>
+
 <style lang="stylus">
 json('../assets/colors.json')
 #Top
+  position fixed
+  width 100%
+  transition z-index 0.2s ease-in-out 0s
+  z-index 150
   > .container
     > .burger
       cursor pointer
       position absolute
+      transition z-index 0.2s ease-in-out 0s, transform 0.25s ease-in-out
       top 60px
       right 60px
       clear both
-      width 40px
+      width 60px
       height 40px
+      padding 10px
       z-index 150
-      &.on > .lines > span
+      &.black > .lines > span
+        background-color black
+      &.white > .lines > span
         background-color white
       &.on > .lines > span:nth-child(1)
         top 18px
@@ -41,17 +64,15 @@ json('../assets/colors.json')
         position relative
         width 100%
         height 100%
-
         > span
           display block
           position absolute
-          height 3px
+          height 4px
           border-radius 9px
           width 100%
-          background-color white
           opacity 1
           left 0
-          transition transform 0.25s ease-in-out
+          transition 0.25s ease-in-out
           &:nth-child(1)
             top 0px
           &:nth-child(2),

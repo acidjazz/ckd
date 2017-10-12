@@ -1,5 +1,5 @@
 <template lang="pug">
-.hero
+.hero(v-on:scroll="scroll()")
   .container
     .seal
       include ../static/seal.svg
@@ -13,8 +13,39 @@
 
     .socials.is-c1b
       a.social.social_pinterest(@click="$store.commit('modalOn')") pinterest
-      a.social.social_instagra(@click="$store.commit('modalOn')") instagram
+      a.social.social_instagram(@click="$store.commit('modalOn')") instagram
 </template>
+
+<script>
+export default {
+  methods: {
+    scroll (event) {
+      if (window.scrollY < 400) {
+        if (this.$store.state.menu !== 'white') {
+          this.$store.commit('menuColor', 'white')
+        }
+      }
+      if (window.scrollY > 400) {
+        if (this.$store.state.menu !== 'black') {
+          this.$store.commit('menuColor', 'black')
+        }
+      }
+    }
+  },
+
+  created () {
+    if (process.browser) {
+      window.addEventListener('scroll', this.scroll)
+    }
+  },
+  destroyed () {
+    if (process.browser) {
+      window.removeEventListener('scroll', this.scroll)
+    }
+  },
+
+}
+</script>
 
 <style lang="stylus">
 

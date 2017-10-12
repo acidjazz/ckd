@@ -88,6 +88,9 @@ import Parallax from 'vue-parallaxy'
 export default {
   directives: { 'in-viewport': inViewportDirective },
   components: { Parallax },
+  created () {
+    this.$store.commit('menuColor', 'black')
+  },
   methods: {
     browser () {
       return process.browser

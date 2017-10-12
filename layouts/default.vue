@@ -1,6 +1,6 @@
 <template lang="pug">
   #CKD
-    // Top
+    Top
     nuxt
     Bottom
     Modal
