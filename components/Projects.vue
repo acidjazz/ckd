@@ -19,6 +19,7 @@ section#Projects.section
       float left
       padding 0 0 20px 0
       border-bottom 4px solid black
+      letter-spacing 1px
     > .projects
       margin 30px 0
       display flex
@@ -29,11 +30,11 @@ section#Projects.section
           > img
             width 100%
         &:nth-child(3n-2) > .image
-          margin 20px 30px 20px 0px
+          margin 40px 50px 40px 0px
         &:nth-child(3n-1) > .image
-          margin 20px 15px 20px 15px
+          margin 40px 25px 40px 25px
         &:nth-child(3n) > .image
-          margin 20px 0 20px 30px
+          margin 40px 0 40px 50px
 @media all and (min-width: 1px) and (max-width: 1000px)
   #Projects > .container
     > .title

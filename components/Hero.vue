@@ -3,6 +3,7 @@
   .container
     .seal
       include ../static/seal.svg
+
     .logo
       include ../static/logo.svg
 
@@ -53,12 +54,15 @@ export default {
   background-image url('/static/banner.jpg')
   background-size cover
   background-position 50% 50%
-  padding 60px
   position relative
+  height 100vh
   > .container
+    height 100%
     > .seal
-      width 60px
-      height 60px
+      width 90px
+      height 90px
+      padding-top 60px
+      padding-left 60px
       > svg
         width inherit
         height inherit
@@ -71,8 +75,9 @@ export default {
           fill white
 
     > .logo
-      width 1000px
+      width 800px
       margin auto
+      margin-top 22vh
 
     > .socials,
     > .address
@@ -81,7 +86,7 @@ export default {
       text-transform uppercase
       text-decoration none
       position absolute
-      bottom 30px
+      bottom 60px
     > .address
       left 30px
     > .socials
