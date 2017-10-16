@@ -2,9 +2,10 @@ module.exports = {
   sho17: {
     url: 'sho17',
     thumb: 'CKD_344x290_1.jpg',
-    location: 'LOCATION, CA',
-    title: 'PROJECT TITLE',
-    copy: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed nulla id nulla pellentesque pharetra quis quis lorem. Suspendisse finibus laoreet nibh. Integer ornare interdum rhoncus. Aliquam vestibulum commodo odio eu lacinia. Curabitur vitae ipsum a metus vehicula port- titor ac sodales neque. Nulla vel nibh volutpat, blandit nunc in, luctus dolor. Ut finibus quam eget ornare feu- giat. Sed vehicula vulputate nisl at ullamcorper.',
+    location: 'PACIFIC HEIGHTS, CA',
+    title: 'showcase 2017',
+    hover: 'modern, ca',
+    copy: "For this year's Decorator Showcase, we decided to design a room for ourselves. One that was elemental and quietly romantic but also layered and rich in meaning. One that feels like what California feels like to us right now.",
     hero: {
       file: 'Show_1216x800px_1.jpg',
       width: 1216,
@@ -26,8 +27,9 @@ module.exports = {
     url: 'parbr',
     thumb: 'CKD_344x290_2.jpg',
     location: 'LOCATION, CA',
-    title: 'PROJECT TITLE',
-    copy: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed nulla id nulla pellentesque pharetra quis quis lorem. Suspendisse finibus laoreet nibh. Integer ornare interdum rhoncus. Aliquam vestibulum commodo odio eu lacinia. Curabitur vitae ipsum a metus vehicula port- titor ac sodales neque. Nulla vel nibh volutpat, blandit nunc in, luctus dolor. Ut finibus quam eget ornare feu- giat. Sed vehicula vulputate nisl at ullamcorper.',
+    title: 'contemporary paficic heights',
+    hover: 'contemporary jewelbox',
+    copy: "With a swath of sky and the span of the San Francisco Bay as a backdrop, this architectural gem called for subtle layers and clean lines.  A parchment leather cabinet houses the clients' antique china collection, and a handblown glass chandelier floats above a dining table made for big family dinners - proof that contemporary architecture can feel comfortable and inviting without sacrificing an ounce of style.",
     hero: {
       file: 'Parbr_1216x800px_1.jpg',
       width: 1216,
@@ -110,10 +112,10 @@ module.exports = {
   shija: {
     url: 'shija',
     thumb: 'CKD_344x290_5.jpg',
-    location: 'WOODSIDE, CA',
-    hover: 'RETREAT',
-    title: 'MODERN MEETS TRADITIONAL',
-    copy: "What happens when a big-city family with a serious modern art collection moves to the country?  Well, not the country, exactly, but this traditional Tudor-style home is nestled among the hills of Woodside, where you're as likely to see a horse on the road as you are a Tesla.  We used a sophisticated materials palette to update the house for our urbane family, bringing a strong point of view to this classic home.",
+    location: 'PACIFIC HEIGHTS, CA',
+    title: 'RUNWAY INSPIRED',
+    hover: 'TOWNHOUSE',
+    copy: "When a client approaches you with inspiration images from the lookbooks of Valentino, Erdem, and Dior, you know it's going to be good.  Our fashionista client was looking to create a family home that reflected her signature sense of fun and style.  We took cues from her closet, as well as the runway, to inform this glamorous study in pattern-mixing.",
     hero: {
       file: 'Shija_1216x800px_1.jpg',
       width: 1216,
@@ -130,10 +132,10 @@ module.exports = {
   pacific: {
     url: 'pacific',
     thumb: 'CKD_344x290_6.jpg',
-    location: 'PACIFIC HEIGHTS, CA',
-    hover: 'MODERN, CA',
-    title: 'SHOWCASE 2017',
-    copy: "For this year's Decorator Showcase, we decided to design a room for ourselves. One that was elemental and quietly romantic but also layered and rich in meaning. One that feels like what California feels like to us right now.",
+    location: 'JACKSON SQUARE, CA',
+    hover: 'POCKET OF CALM',
+    title: 'JACKSON SQUARE LOFT',
+    copy: "When approaching the remodel of this small loft apartment, editing was the key.  First step: removing the eighties-style shag carpet and the mirrors that covered every surface.  It was smooth sailing after that: white walls, dark floors, tailored drapery... Throw in an 800-pound steel firewood holder, a glass chandelier, and a favorite pair of leather sling chairs, and the place was ready for late-night cocktails and easy Sunday mornings.",
     hero: {
       file: 'PacificApts_1216x800px_1.jpg',
       width: 1216,
@@ -152,9 +154,10 @@ module.exports = {
   weija: {
     url: 'weija',
     thumb: 'CKD_344x290_7.jpg',
-    location: 'LOCATION, CA',
-    title: 'PROJECT TITLE',
-    copy: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed nulla id nulla pellentesque pharetra quis quis lorem. Suspendisse finibus laoreet nibh. Integer ornare interdum rhoncus. Aliquam vestibulum commodo odio eu lacinia. Curabitur vitae ipsum a metus vehicula port- titor ac sodales neque. Nulla vel nibh volutpat, blandit nunc in, luctus dolor. Ut finibus quam eget ornare feu- giat. Sed vehicula vulputate nisl at ullamcorper.',
+    location: 'PRESIDIO, CA',
+    hover: 'PRESIDIO HEIGHTS MODERN',
+    title: 'REFINED GLAMOUR SETS THE STAGE',
+    copy: "Three months to furnish a home?  No problem.  Our jet-setting clients came to us with a love for modern design and very tight timeline. We got to work sourcing vintage lighting and in-stock rugs, and designed custom brackets to add detail to reupholstered chairs.  Large-format artwork frames the scene in each room, anchoring a mix of bold patterns and luxe fabrics, to create a stylish sanctuary for beautiful living.",
     hero: {
       file: 'Weija_1216x800px_1.jpg',
       width: 1216,
@@ -176,9 +179,10 @@ module.exports = {
   sho13: {
     url: 'sho13',
     thumb: 'CKD_344x290_8.jpg',
-    location: 'LOCATION, CA',
-    title: 'PROJECT TITLE',
-    copy: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed nulla id nulla pellentesque pharetra quis quis lorem. Suspendisse finibus laoreet nibh. Integer ornare interdum rhoncus. Aliquam vestibulum commodo odio eu lacinia. Curabitur vitae ipsum a metus vehicula port- titor ac sodales neque. Nulla vel nibh volutpat, blandit nunc in, luctus dolor. Ut finibus quam eget ornare feu- giat. Sed vehicula vulputate nisl at ullamcorper.',
+    location: 'PACIFIC HEIGHTS, CA',
+    hover: 'SHOWCASE 2013',
+    title: 'Classical architecture gets the rock \'n roll treatment',
+    copy: 'For the 2013 San Francisco Decorator Showcase, we were inspired by old photos we found of Mick and Bianca Jagger in their newlywed days.  Unabashedly stylish, the photos depicted a wild romance.  We designed our award-winning room for that couple in that moment of amour fou: luxe and decadent, but with all the impossible glamour of true rock royalty.',
     hero: {
       file: 'Show_1216x800px_1.jpg',
       width: 1216,
@@ -197,9 +201,10 @@ module.exports = {
   quegr: {
     url: 'quegr',
     thumb: 'CKD_344x290_9.jpg',
-    location: 'LOCATION, CA',
-    title: 'PROJECT TITLE',
-    copy: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed nulla id nulla pellentesque pharetra quis quis lorem. Suspendisse finibus laoreet nibh. Integer ornare interdum rhoncus. Aliquam vestibulum commodo odio eu lacinia. Curabitur vitae ipsum a metus vehicula port- titor ac sodales neque. Nulla vel nibh volutpat, blandit nunc in, luctus dolor. Ut finibus quam eget ornare feu- giat. Sed vehicula vulputate nisl at ullamcorper.',
+    location: 'COW HOLLOW, CA',
+    title: 'Cozy vibes for a modern bachelor pad',
+    hover: 'COW HOLLOW HIDEAWAY',
+    copy: 'We approached this gut renovation with an eye toward balance.  While the exterior and front entry of the house retain historical details of the original architecture, the rest of the home is a minimalist retreat composed of clean lines and a neutral materials palette of glass, plaster and leather floors.  With a focus on comfort and warmth, we punctuated the space with industrial fixtures, walnut-framed furniture, and suiting fabrics from Saville Row.  Dreamy light filters effortlessly through this urban retreat.',
     hero: {
       file: 'CowHollow_1216x800px_1.jpg',
       width: 1216,
