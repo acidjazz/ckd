@@ -24,6 +24,7 @@
 </template>
 
 <style lang="stylus">
+json('../assets/colors.json')
 #Bottom
   padding 60px
   text-transform uppercase

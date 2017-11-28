@@ -7,12 +7,12 @@
     .logo
       include ../static/logo.svg
 
-    a.address(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new").is-c1b
+    a.address(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new")
       .copy 295 kansas street
       .copy san francisco, ca
       .copy 9.4.1.0.3
 
-    .socials.is-c1b
+    .socials
       a.social.social_pinterest(@click="$store.commit('modalOn')") pinterest
       a.social.social_instagram(@click="$store.commit('modalOn')") instagram
 </template>
@@ -79,6 +79,7 @@ export default {
       > .social
         display block
         cursor pointer
+        margin 10px 0 0 0
         &:hover
           background-color white
           color black
