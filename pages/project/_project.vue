@@ -2,6 +2,7 @@
 #Project.page
   .banner
     .container
+      .location.is-h2 {{ project.location }}
       //.image(:style="`width: ${project.hero.width}px; height: ${project.hero.height}px;`")
       .image(v-if="browser()")
         parallax
@@ -10,12 +11,11 @@
         .Masthead
           .is-parallax.Masthead__image
             img(:src="`/projects/${project.url}/${project.hero.file}`")
-      .location.is-h2 {{ project.location }}
 
 
   .body
-    .title.is-h1b {{ project.title }} 
-    .copy {{ project.copy }}
+    .title.is-h1b(v-in-viewport) {{ project.title }} 
+    .copy(v-in-viewport) {{ project.copy }}
 
   .gallery
     .tile(
@@ -38,21 +38,28 @@
   > .banner
     padding 120px 0 90px 0
     > .container
+      position relative
+      > .location
+        transform rotate(-90deg)
+        position absolute
+        bottom 75px
+        left -95px
+        width 180px
+        height 30px
       > .image > .Masthead
         height 70vh !important
         min-height 70vh !important
-       > .location
-         transform rotate(-90deg)
-         float left
-         margin -80px 0 0 -70px
 
   > .body
     max-width 900px
     margin auto
     padding-bottom 90px
+    > .title
+      inViewport(0.1)
     > .copy
       padding 60px 0 0 0
       width 540px
+      inViewport(0.2)
 
   > .gallery
     width 1176px

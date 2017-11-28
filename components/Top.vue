@@ -1,16 +1,20 @@
 <template lang="pug">
 #Top
   .container
-    router-link.burger(
-      to="/",
+    .burger(
       @click="on = !on",
-      :class="{off: !on, on: on, white: $store.state.menu === 'white', black: $store.state.menu === 'black'}"
+      :class="{off: !on, on: on, white: ($store.state.menu === 'white' || on), black: $store.state.menu === 'black'}"
     )
       .lines
         span
         span
         span
         span
+  transition(name="fade")
+    .menu(v-if="on")
+      .container
+        router-link.seal(to="/",@click.native="on = false")
+          include ../static/seal.svg
 </template>
 
 <script>
@@ -31,6 +35,13 @@ json('../assets/colors.json')
   width 100%
   transition z-index 0.2s ease-in-out 0s
   z-index 150
+  > .menu
+    position fixed
+    top 0
+    left 0
+    width 100%
+    height 100%
+    background-color black
   > .container
     > .burger
       cursor pointer
@@ -80,6 +91,12 @@ json('../assets/colors.json')
             top 14px
           &:nth-child(4)
             top 28px
+
+
+.fade-enter-active, .fade-leave-active 
+  transition opacity .5s
+.fade-enter, .fade-leave-to
+  opacity 0
 
 @media all and (min-width: 1px) and (max-width: 1000px)
   .burger

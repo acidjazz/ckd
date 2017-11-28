@@ -69,6 +69,9 @@ module.exports = {
   plugins: [
     {src: '~plugins/ga.js', ssr: false},
   ],
+  modules: [
+    '@nuxtjs/webpackmonitor',
+  ],
   build: {
     /*
     ** Run ESLINT on save

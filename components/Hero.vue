@@ -21,12 +21,12 @@
 export default {
   methods: {
     scroll (event) {
-      if (window.scrollY < 400) {
+      if (window.scrollY < window.innerHeight) {
         if (this.$store.state.menu !== 'white') {
           this.$store.commit('menuColor', 'white')
         }
       }
-      if (window.scrollY > 400) {
+      if (window.scrollY > window.innerHeight) {
         if (this.$store.state.menu !== 'black') {
           this.$store.commit('menuColor', 'black')
         }
@@ -58,21 +58,6 @@ export default {
   height 100vh
   > .container
     height 100%
-    > .seal
-      width 90px
-      height 90px
-      padding-top 60px
-      padding-left 60px
-      > svg
-        width inherit
-        height inherit
-        > circle
-          fill none
-          stroke white
-          stroke-width 3
-          border 10px solid white
-        > path
-          fill white
 
     > .logo
       width 800px

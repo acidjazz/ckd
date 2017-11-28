@@ -16,6 +16,7 @@
     "test": "echo No tests yet"
   },
   "dependencies": {
+    "@nuxtjs/webpackmonitor": "^0.0.3",
     "aeonian": "^1.0.9",
     "nuxt": "^1.0.0-rc8",
     "pug": "^2.0.0-rc.4",
