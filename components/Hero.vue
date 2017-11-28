@@ -1,24 +1,30 @@
 <template lang="pug">
-.hero(v-on:scroll="scroll()")
+.hero(v-on:scroll="scroll()",:class="{'hero-Home': page === 'Home', 'hero-Contact': page === 'Contact'}")
   .container
-    .seal
+    .seal(v-if="page === 'Home'")
       include ../static/seal.svg
 
-    .logo
+    .logo(v-if="page === 'Home'")
       include ../static/logo.svg
 
-    a.address(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new")
-      .copy 295 kansas street
+    a.address(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new",v-if="page === 'Home'")
+      .copy 2100 Bryant street
       .copy san francisco, ca
-      .copy 9.4.1.0.3
+      .copy 9.4.1.1.0
 
-    .socials
+    .socials(v-if="page === 'Home'")
       a.social.social_pinterest(@click="$store.commit('modalOn')") pinterest
       a.social.social_instagram(@click="$store.commit('modalOn')") instagram
 </template>
 
 <script>
 export default {
+  props: {
+    page: {
+      type: String,
+      default: 'Home',
+    }
+  },
   methods: {
     scroll (event) {
       if (window.scrollY < window.innerHeight) {
@@ -51,11 +57,15 @@ export default {
 <style lang="stylus">
 
 .hero
-  background-image url('/static/banner.jpg')
   background-size cover
   background-position 50% 50%
   position relative
-  height 100vh
+  &.hero-Home
+    height 100vh
+    background-image url('/static/banner.jpg')
+  &.hero-Contact
+    height 80vh
+    background-image url('/static/contact.jpg')
   > .container
     height 100%
 

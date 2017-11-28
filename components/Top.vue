@@ -13,8 +13,22 @@
   transition(name="fade")
     .menu(v-if="on")
       .container
+
         router-link.seal(to="/",@click.native="on = false")
           include ../static/seal.svg
+
+        .options
+          router-link.option(to="/",@click.native="on = false").is-h1 Projects
+          router-link.option(to="/about",@click.native="on = false").is-h1 About
+          router-link.option(to="/press",@click.native="on = false").is-h1 Press
+          router-link.option(to="/contact",@click.native="on = false").is-h1 Contact
+
+        a.address(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new")
+          .copy 295 kansas street
+          .copy san francisco, ca
+          .copy 9.4.1.0.3
+
+
 </template>
 
 <script>
@@ -29,6 +43,7 @@ export default {
 </script>
 
 <style lang="stylus">
+json('../assets/fonts.json')
 json('../assets/colors.json')
 #Top
   position fixed
@@ -42,6 +57,24 @@ json('../assets/colors.json')
     width 100%
     height 100%
     background-color black
+    > .container
+      position relative
+      height 100%
+      > .options
+        display flex
+        flex-direction column
+        height calc(100vh - 300px)
+        justify-content center
+        > .option
+          color white
+          text-decoration none
+          width fit-content
+          padding 30px 0px 10px 0px
+          border-bottom 4px solid transparent
+          transition all 0.2s ease 0.1s
+          &:hover
+            color rgba(white, 0.30)
+            border-bottom 4px solid rgba(white, 0.30)
   > .container
     > .burger
       cursor pointer
@@ -91,7 +124,6 @@ json('../assets/colors.json')
             top 14px
           &:nth-child(4)
             top 28px
-
 
 .fade-enter-active, .fade-leave-active 
   transition opacity .5s

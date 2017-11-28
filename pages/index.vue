@@ -1,7 +1,7 @@
 <template lang="pug">
 #Index.page
   Hero
-  Card
+  Card(page="Home")
   Projects
 </template>
 

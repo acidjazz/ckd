@@ -9,17 +9,15 @@
       .copy &copy; CATHERINE KWONG DESIGN, 2011
       .copy SITE BY DESIGNSAKE STUDIO
 
-    .address
+    .baddress
       .copy CATHERINE KWONG DESIGN
-      .copy 295 kansas street
-      .copy san francisco, ca
-      .copy 9.4.1.0.3
+      a.copy(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") 2100 Bryant street
+      a.copy(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") san francisco, ca
+      a.copy(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") 9.4.1.1.0
       .socials
         a.social.social_pinterest pinterest
         .separator
         a.social.social_instagram instagram
-        .separator
-        a.social.social_blog blog
     .clear
 </template>
 
@@ -28,7 +26,7 @@ json('../assets/colors.json')
 #Bottom
   padding 60px
   text-transform uppercase
-  letter-spacing 3px
+  letter-spacing 2px
   > .container
     > .menu
       float left
@@ -41,15 +39,18 @@ json('../assets/colors.json')
         &:hover
           background-color black
           color white
-    > .address
+    > .baddress
       float right
       > .copy
         padding 4px 0
+        color black
+        text-decoration none
+        display block
       > .socials
         padding 10px 0 0 0
         > .social,
         > .separator
-          float right
+          float left
         > .separator
           width 1px
           height 10px

@@ -4,7 +4,7 @@ const store = () => new Vuex.Store({
 
   state: {
     modal: false,
-    menu: 'white',
+    menu: 'black',
   },
 
   mutations: {
