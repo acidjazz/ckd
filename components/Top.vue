@@ -23,17 +23,17 @@
           router-link.option(to="/press",@click.native="on = false").is-h1 Press
           router-link.option(to="/contact",@click.native="on = false").is-h1 Contact
 
-        a.address(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new")
-          .copy 295 kansas street
-          .copy san francisco, ca
-          .copy 9.4.1.0.3
-
+        Address
+        Socials
 
 </template>
 
-<script>
 
+<script>
+import Address from '~/components/Address'
+import Socials from '~/components/Socials'
 export default {
+  components: { Address, Socials },
   data () {
     return {
       on: false,
@@ -43,6 +43,7 @@ export default {
 </script>
 
 <style lang="stylus">
+@import '../assets/stylus/mixins'
 json('../assets/fonts.json')
 json('../assets/colors.json')
 #Top
@@ -70,8 +71,9 @@ json('../assets/colors.json')
           text-decoration none
           width fit-content
           padding 30px 0px 10px 0px
+          margin-left 40px
           border-bottom 4px solid transparent
-          transition all 0.2s ease 0.1s
+          transition all 0.3s ease 0s
           &:hover
             color rgba(white, 0.30)
             border-bottom 4px solid rgba(white, 0.30)
@@ -131,7 +133,9 @@ json('../assets/colors.json')
   opacity 0
 
 @media all and (min-width: 1px) and (max-width: 1000px)
-  .burger
-    top 20px
-    right 20px
+  #Top
+    .container
+      .burger
+        top 30px
+        right 30px
 </style>

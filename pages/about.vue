@@ -4,18 +4,18 @@
     .bigtitle.is-h1(v-in-viewport) ABOUT CKD
     .clear
     .sections
-      .section(v-in-viewport)
-        .thumb.thumb_residential
-        .title.is-c4b RESIDENTIAL
-        p From San Francisco to Napa Valley, to Hawaii and beyond, we specialize in designing high-end residential interiors, with a focus on modern architecture and custom furniture and detailing.
-      .section(v-in-viewport)
-        .thumb.thumb_hospitality
-        .title.is-c4b HOSPITALITY
-        p We believe that a commercial space can still feel like a home - albeit one without all of that pesky laundry to do. We bring an elevated aesthetic and a healthy dose of fun to all of our hospitality projects.
-      .section(v-in-viewport)
-        .thumb.thumb_lifestyle
-        .title.is-c4b LIFE STYLE
-        p Whether it's organizing a big launch event or styling an intimate family photo shoot, we are happy to step in to take care of all the details for you. Life should be celebrated, and we're here to help.
+      .section
+        .thumb.thumb_residential(v-in-viewport)
+        .title.is-c4b(v-in-viewport) RESIDENTIAL
+        p(v-in-viewport) From San Francisco to Napa Valley, to Hawaii and beyond, we specialize in designing high-end residential interiors, with a focus on modern architecture and custom furniture and detailing.
+      .section
+        .thumb.thumb_hospitality(v-in-viewport)
+        .title.is-c4b(v-in-viewport) HOSPITALITY
+        p(v-in-viewport) We believe that a commercial space can still feel like a home - albeit one without all of that pesky laundry to do. We bring an elevated aesthetic and a healthy dose of fun to all of our hospitality projects.
+      .section
+        .thumb.thumb_lifestyle(v-in-viewport)
+        .title.is-c4b(v-in-viewport) LIFE STYLE
+        p(v-in-viewport) Whether it's organizing a big launch event or styling an intimate family photo shoot, we are happy to step in to take care of all the details for you. Life should be celebrated, and we're here to help.
       .clear
     .bigtitle.is-h1(v-in-viewport) ABOUT THE PRINCIPAL
     .clear
@@ -47,11 +47,26 @@
         width 33%
         float left
         &:nth-child(1)
-          inViewport(0.1)
+          > .thumb
+            inViewport(0.1)
+          > .title
+            inViewport(0.2)
+          > p
+            inViewport(0.3)
         &:nth-child(2)
-          inViewport(0.2)
+          > .thumb
+            inViewport(0.1)
+          > .title
+            inViewport(0.2)
+          > p
+            inViewport(0.3)
         &:nth-child(3)
-          inViewport(0.3)
+          > .thumb
+            inViewport(0.1)
+          > .title
+            inViewport(0.2)
+          > p
+            inViewport(0.3)
         > .thumb
           width 338px
           height 338px
@@ -82,6 +97,40 @@
         float left
         > .inner
           margin-right 90px
+
+@media all and (min-width: 1px) and (max-width: 1000px)
+  #About.page
+    padding 90px 0
+    .container
+      .bigtitle
+        font-size 30px
+        text-align center
+        float none
+        margin 20px
+      > .sections
+        > .section
+          width 100%
+          margin 40px 0
+          float none
+          > .thumb
+            margin auto
+          > .title
+            text-align center
+          > p
+            margin 20px
+
+      > .principal
+        padding 20px
+        > .image
+          width 100%
+          float none
+          > .inner
+            width 100%
+        > .copy
+          width 100%
+          float none
+          > .inner
+            margin 30px 0 
 
 </style>
 

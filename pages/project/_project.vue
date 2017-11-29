@@ -86,6 +86,43 @@
       > .image
         background-size contain
 
+@media all and (min-width: 1px) and (max-width: 1000px)
+  #Project
+    > .banner
+      padding 90px 0 30px 0
+      > .container
+        > .location
+          display none
+    > .body
+      padding 20px
+      > .copy
+        width 100%
+    > .gallery
+      width 100%
+      > .tile
+        padding-bottom 20px
+        &.is-left
+          float none
+          clear both
+          margin 0
+        &.is-right
+          float none
+          clear both
+          margin 0 
+        &.is-full
+          float none
+          clear both
+          margin 0 
+        > .image
+          width 90vw !important
+          height 90vw !important
+          height auto
+          background-size cover
+          background-position 50% 50%
+          background-repeat no-repeat
+          margin auto
+
+
 </style>
 
 <script>

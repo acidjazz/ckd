@@ -1,16 +1,15 @@
 <template lang="pug">
 .card.is-bg-iceberg
   .container
+    .title.is-froly(v-in-viewport,v-if="page === 'Home'") tailored interests
+    .title.is-froly.title-contact(v-in-viewport,v-if="page === 'Contact'") contact
+    .title.is-froly.title-press(v-in-viewport,v-if="page === 'Press'") press
 
-    .title.is-froly(v-if="page === 'Home'") tailored interests
-    .title.is-froly.title-contact(v-if="page === 'Contact'") contact
-    .title.is-froly.title-press(v-if="page === 'Press'") press
-
-    .quote(v-if="page === 'Press'")
+    .quote(v-in-viewport,v-if="page === 'Press'")
       p Kwong’s keen interest in modern architecture informs her inviting yet disciplined interiors, where the subtlest nuances sing.
       i - Architectual Digest
 
-    .column(v-if="page === 'Contact'")
+    .column(v-in-viewport,v-if="page === 'Contact'")
       .block.gapped
         .title.is-c4b GIVE US A CALL
         a(href="tel:4157355109") 415.735.5190
@@ -19,27 +18,29 @@
         a(href="mailto:info@catherinekwong.com") E-mail
         a(href="mailto:media@catherinekwong.com") Media Inquries
 
-    .column(v-if="page === 'Contact'")
+    .column(v-in-viewport,v-if="page === 'Contact'")
       .block
         .title.is-c4b COME VISIT US
         a(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") 2100 Bryant Srreet
         a(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") San Francisco, CA 94110
 
-    .est(v-if="page === 'Home'")
+    .est(v-in-viewport,v-if="page === 'Home'")
       .year.is-c2 2011
       .copy.is-c3 established
-    .copy.is-c4(v-if="page === 'Home'") Catherine Kwong Design specializes in high-end residential and hospitality projects, with an emphasis on modern architecture and custom detailing. The firm brings a fresh approach to elegant, tailored interiors-mixing modern with vintage; high art with personal treasures- to create moments of unexpected beauty.
+    .copy.is-c4(v-in-viewport,v-if="page === 'Home'") Catherine Kwong Design specializes in high-end residential and hospitality projects, with an emphasis on modern architecture and custom detailing. The firm brings a fresh approach to elegant, tailored interiors-mixing modern with vintage; high art with personal treasures- to create moments of unexpected beauty.
 
     .clear
 </template>
 
 <style lang="stylus">
+@import '../assets/stylus/mixins'
 .card
   background-color iceberg
   padding 120px 30px
   > .container
 
     > .title
+      inViewportFade(0)
       text-align center
       display inline-block
       transform rotate(-90deg)
@@ -52,6 +53,7 @@
         margin-top 70px
 
     > .column
+      inViewport(0.1)
       float right
       width 360px
       .block
@@ -64,16 +66,19 @@
         margin 5px 0
 
     .quote
+      inViewport(0.1)
       margin -90px auto 0 auto
       width 640px
 
     > .copy
+      inViewport(0.1)
       width 400px
       float right
       line-height 30px
       margin-right 30px
 
     .est
+      inViewport(0.2)
       float right
       > .year
         padding 0 0 10px 0
@@ -90,15 +95,25 @@
       > .title
         transform rotate(0deg)
         margin-top 30px
+        margin-bottom 30px
+        text-align center
+        display block
       > .copy
         width auto
         margin-right 0
         margin-top 30px
 
+      > .column
+        float none
+        width auto
+        text-align center
+        margin 0 0 30px 0
 </style>
 
 <script>
+import inViewportDirective from 'vue-in-viewport-directive'
 export default {
+  directives: { 'in-viewport': inViewportDirective },
   props: {
     page: {
       type: String,

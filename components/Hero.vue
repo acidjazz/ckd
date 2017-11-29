@@ -1,24 +1,23 @@
 <template lang="pug">
 .hero(v-on:scroll="scroll()",:class="{'hero-Home': page === 'Home', 'hero-Contact': page === 'Contact'}")
   .container
-    .seal(v-if="page === 'Home'")
+    .seal(v-if="page === 'Home'",v-in-viewport)
       include ../static/seal.svg
 
-    .logo(v-if="page === 'Home'")
+    .logo(v-if="page === 'Home'",v-in-viewport)
       include ../static/logo.svg
 
-    a.address(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new",v-if="page === 'Home'")
-      .copy 2100 Bryant street
-      .copy san francisco, ca
-      .copy 9.4.1.1.0
-
-    .socials(v-if="page === 'Home'")
-      a.social.social_pinterest(@click="$store.commit('modalOn')") pinterest
-      a.social.social_instagram(@click="$store.commit('modalOn')") instagram
+    Address(v-if="page === 'Home'",v-in-viewport)
+    Socials(v-if="page === 'Home'",v-in-viewport)
 </template>
 
 <script>
+import Address from '~/components/Address'
+import Socials from '~/components/Socials'
+import inViewportDirective from 'vue-in-viewport-directive'
 export default {
+  directives: { 'in-viewport': inViewportDirective },
+  components: { Address, Socials },
   props: {
     page: {
       type: String,
@@ -55,7 +54,7 @@ export default {
 </script>
 
 <style lang="stylus">
-
+@import '../assets/stylus/mixins'
 .hero
   background-size cover
   background-position 50% 50%
@@ -73,36 +72,22 @@ export default {
       width 800px
       margin auto
       margin-top 22vh
-
-    > .socials,
+      inViewportScale(0)
+    > .seal
+      inViewportFade(0.2)
     > .address
-      color white
-      letter-spacing 3px
-      text-transform uppercase
-      text-decoration none
-      position absolute
-      bottom 60px
-    > .address
-      left 30px
+      inViewportFade(0.3)
     > .socials
-      right 30px
-      > .social
-        display block
-        cursor pointer
-        margin 10px 0 0 0
-        &:hover
-          background-color white
-          color black
+      inViewportFade(0.4)
+
 
 @media all and (min-width: 1px) and (max-width: 1000px)
   .hero
     padding 10px
     > .container
       > .logo
-        margin-top 30px
+        margin-top 25vh
         width 100%
         height 260px
-      > .socials, > .address
-        font-size 10px
 
 </style>

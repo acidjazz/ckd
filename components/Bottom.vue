@@ -37,8 +37,8 @@ json('../assets/colors.json')
         display inline-block
         cursor pointer
         &:hover
-          background-color black
-          color white
+          color rgba(black, 0.5)
+          text-decoration underline
     > .baddress
       float right
       > .copy
@@ -59,8 +59,8 @@ json('../assets/colors.json')
         > .social
           cursor pointer
           &:hover
-            background-color black
-            color white
+            color rgba(black, 0.5)
+            text-decoration underline
 
 @media all and (min-width: 1px) and (max-width: 1000px)
   #Bottom
@@ -69,7 +69,8 @@ json('../assets/colors.json')
       text-align center
       > .menu
         float none
-      > .address
+      > .baddress
+        margin 20px 0 0 0
         float none
         > .socials
           padding 20px 0 0 0

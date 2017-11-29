@@ -5,6 +5,7 @@ section#Projects.section
     .clear
     .projects
       router-link.project(
+        v-in-viewport,
         v-for="project in projects",
         :to="`/project/${project.url}/`",
         :key="project.url")
@@ -16,6 +17,7 @@ section#Projects.section
 </template>
 
 <style lang="stylus">
+@import '../assets/stylus/mixins'
 json('../assets/colors.json')
 #Projects
   > .container
@@ -31,6 +33,10 @@ json('../assets/colors.json')
       > .project
         position relative
         width 33%
+        inViewport(0)
+        for i in 1..10
+          &:nth-child({i})
+            inViewport(0.2 * i)
         > .detail
           position absolute
           top 80px
@@ -77,12 +83,26 @@ json('../assets/colors.json')
     > .title
       float none
       text-align center
+      font-size 30px
+      margin 20px 
+    > .projects
+      > .project
+        width 100%
+        > .image
+          margin 20px !important
+        > .detail
+          opacity 1
+          left 20px !important
+          > p
+            opacity 1
 
 </style>
 
 <script>
 import projects from '~/assets/projects.js'
+import inViewportDirective from 'vue-in-viewport-directive'
 export default {
+  directives: { 'in-viewport': inViewportDirective },
   data () {
     return {
       projects: projects
