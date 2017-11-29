@@ -77,6 +77,9 @@ json('../assets/colors.json')
           &:hover
             color rgba(white, 0.30)
             border-bottom 4px solid rgba(white, 0.30)
+          for i in 1..4
+            &:nth-child({i})
+              transition-delay unit(0.03 * i, 's')
   > .container
     > .burger
       cursor pointer
@@ -133,7 +136,7 @@ json('../assets/colors.json')
 .fade-enter, .fade-leave-to
   opacity 0
   .options .option
-    transform translate(-30px, 0)
+    transform translate(-15px, 0)
 
 @media all and (min-width: 1px) and (max-width: 1000px)
   #Top
