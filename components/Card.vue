@@ -1,8 +1,14 @@
 <template lang="pug">
 .card.is-bg-iceberg
   .container
+
     .title.is-froly(v-if="page === 'Home'") tailored interests
-    .title.is-froly.title-contact(v-else) contact
+    .title.is-froly.title-contact(v-if="page === 'Contact'") contact
+    .title.is-froly.title-press(v-if="page === 'Press'") press
+
+    .quote(v-if="page === 'Press'")
+      p Kwong’s keen interest in modern architecture informs her inviting yet disciplined interiors, where the subtlest nuances sing.
+      i - Architectual Digest
 
     .column(v-if="page === 'Contact'")
       .block.gapped
@@ -42,6 +48,8 @@
       margin-top 130px
       &.title-contact
         margin-top 70px
+      &.title-press
+        margin-top 70px
 
     > .column
       float right
@@ -54,6 +62,10 @@
         text-decoration none
         color black
         margin 5px 0
+
+    .quote
+      margin -90px auto 0 auto
+      width 640px
 
     > .copy
       width 400px
