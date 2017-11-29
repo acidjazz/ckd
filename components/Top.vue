@@ -128,9 +128,12 @@ json('../assets/colors.json')
             top 28px
 
 .fade-enter-active, .fade-leave-active 
-  transition opacity .5s
+  transition all .5s
+
 .fade-enter, .fade-leave-to
   opacity 0
+  .options .option
+    transform translate(-30px, 0)
 
 @media all and (min-width: 1px) and (max-width: 1000px)
   #Top
