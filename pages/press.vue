@@ -1,5 +1,5 @@
 <template lang="pug">
-#Contact.page
+#Press.page
   Card(page="Press")
   .container
     .press
@@ -8,7 +8,7 @@
         p.is-c4b SUNSET | October 2017
       .kit(v-in-viewport)
         .image.image_modern
-        p.is-c4b MODERN LUXURY | Fall 2017
+        p.is-c4b SAN FRANCISCO | Fall 2017
       .kit(v-in-viewport)
         .image.image_cali
         p.is-c4b CALIFORNIA HOMES | Fall 2017
@@ -16,20 +16,20 @@
         .image.image_elle1
         p.is-c4b ELLE DECOR | September 2017
       .kit(v-in-viewport)
+        .image.image_luxe
+        p.is-c4b LUXE | January/February 2017
+      .kit(v-in-viewport)
+        .image.image_digest
+        p.is-c4b ARCHITECTURAL DIGEST | January 2015
+      .kit(v-in-viewport)
         .image.image_ca
         p.is-c4b CA HOME AND DESIGN | Spring 2014
       .kit(v-in-viewport)
         .image.image_7x7
         p.is-c4b 7x7 | October 2013
       .kit(v-in-viewport)
-        .image.image_digest
-        p.is-c4b ARCHITECTUAL DIGEST | January 2015
-      .kit(v-in-viewport)
         .image.image_house
         p.is-c4b HOUSE BEAUTIFUL | September 2012
-      .kit(v-in-viewport)
-        .image.image_luxe
-        p.is-c4b LUXE | January/February 2017
       .clear
 </template>
 

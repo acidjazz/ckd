@@ -18,10 +18,10 @@
           include ../static/seal.svg
 
         .options
-          router-link.option(to="/",@click.native="scrollTo('#Projects')").is-h1 Projects
-          router-link.option(to="/about",@click.native="on = false").is-h1 About
-          router-link.option(to="/press",@click.native="on = false").is-h1 Press
-          router-link.option(to="/contact",@click.native="on = false").is-h1 Contact
+          router-link.option(to="/",@click.native="scrollTo('#Projects')").is-h4 Projects
+          router-link.option(to="/about",@click.native="on = false").is-h4 About
+          router-link.option(to="/press",@click.native="on = false").is-h4 Press
+          router-link.option(to="/contact",@click.native="on = false").is-h4 Contact
 
         CAddress
         Socials
@@ -42,7 +42,7 @@ export default {
           block: 'start',
           behavior: 'smooth',
         })
-      }, 600)
+      }, 800)
     },
   },
   data () {
@@ -99,8 +99,8 @@ json('../assets/colors.json')
       top 60px
       right 0px
       clear both
-      width 60px
-      height 40px
+      width 50px
+      height 30px
       padding 10px
       z-index 150
       &.black > .lines > span

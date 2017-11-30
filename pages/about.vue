@@ -1,5 +1,6 @@
 <template lang="pug">
 #About.page
+  Card(page="About")
   .container
     .bigtitle.is-h1(v-in-viewport) ABOUT THE FIRM
     .clear
@@ -32,8 +33,8 @@
 @import '../assets/stylus/mixins'
 
 #About.page
-  padding 120px 0
-  .container
+  > .container
+    padding 120px 0
     .bigtitle
       inViewport(0)
       float left
@@ -135,8 +136,10 @@
 </style>
 
 <script>
+import Card from '~/components/Card.vue'
 import inViewportDirective from 'vue-in-viewport-directive'
 export default {
+  components: { Card },
   directives: { 'in-viewport': inViewportDirective },
   created () {
     this.$store.commit('menuColor', 'black')

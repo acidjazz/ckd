@@ -2,7 +2,7 @@
 #Project.page
   .banner
     .container
-      .location.is-h2 {{ project.location }}
+      .location.is-h3 {{ project.location }}
       //.image(:style="`width: ${project.hero.width}px; height: ${project.hero.height}px;`")
       .image(v-if="browser()")
         parallax
@@ -42,9 +42,9 @@
       > .location
         transform rotate(-90deg)
         position absolute
-        bottom 75px
-        left -95px
-        width 180px
+        bottom 95px
+        left -130px
+        width 220px
         height 30px
       > .image > .Masthead
         height 70vh !important
@@ -75,8 +75,18 @@
         margin 30px 0 30px 30px
         > .image
           inViewport(0.1)
+      &.is-double
+        margin 30px 0 60px 30px
       &.is-clear
         clear both
+        &:before
+        &:after
+          content: ""
+          display: table
+        &:after
+          clear: both
+        zoom: 1 if support-for-ie
+
       &.is-full
         clear both
         margin 30px 0

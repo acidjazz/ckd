@@ -5,7 +5,7 @@
       .copy &copy; CATHERINE KWONG DESIGN, 2011
       a.copy(href="https://designsakestudio.com",target="_new") SITE BY DESIGNSAKE STUDIO
 
-    .baddress
+    //.baddress
       .copy CATHERINE KWONG DESIGN
       a.copy(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") 2100 Bryant street
       a.copy(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") san francisco, ca

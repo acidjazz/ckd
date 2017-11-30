@@ -33,6 +33,7 @@ json('../assets/colors.json')
       flex-wrap wrap
       > .project
         position relative
+        overflow hidden
         width 33%
         inViewport(0)
         for i in 1..3
@@ -48,7 +49,7 @@ json('../assets/colors.json')
           padding 0 20px
           opacity 0
           transition transform 0.6s ease-in-out 0s, opacity 0.4s ease-in-out 0s
-          transform translate(-10px, 0)
+          transform translate(0px, 0)
           > p
             opacity 0
             transform translate(-10px, 0)
