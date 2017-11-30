@@ -6,8 +6,8 @@ section#Projects.section
     .projects
       router-link.project(
         v-in-viewport,
-        v-for="project in projects",
-        :to="`/project/${project.url}/`",
+        v-for="project, key in projects",
+        :to="`/project/${key}/`",
         :key="project.url")
         .image
           img(:src="`/projects/${project.thumb}`")

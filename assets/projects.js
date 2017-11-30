@@ -1,5 +1,5 @@
 module.exports = {
-  sho17: {
+  1: {
     url: 'sho17',
     thumb: 'CKD_344x290_1.jpg',
     location: 'PACIFIC HEIGHTS, CA',
@@ -23,7 +23,7 @@ module.exports = {
     }
   },
 
-  parbr: {
+  2: {
     url: 'parbr',
     thumb: 'CKD_344x290_2.jpg',
     location: 'LOCATION, CA',
@@ -53,7 +53,7 @@ module.exports = {
     }
   },
 
-  brown: {
+  3: {
     url: 'brown',
     thumb: 'CKD_344x290_3.jpg',
     location: 'NAPPA VALLEY, CA',
@@ -83,7 +83,7 @@ module.exports = {
 
     },
   },
-  resma: {
+  4: {
     url: 'resma',
     thumb: 'CKD_344x290_4.jpg',
     location: 'WOODSIDE, CA',
@@ -109,7 +109,7 @@ module.exports = {
     }
   },
 
-  shija: {
+  5: {
     url: 'shija',
     thumb: 'CKD_344x290_5.jpg',
     location: 'PACIFIC HEIGHTS, CA',
@@ -129,7 +129,7 @@ module.exports = {
     }
   },
 
-  pacific: {
+  6: {
     url: 'pacific',
     thumb: 'CKD_344x290_6.jpg',
     location: 'JACKSON SQUARE, CA',
@@ -151,7 +151,7 @@ module.exports = {
       'PacificApts_558x744px_8.jpg': 'is-right',
     }
   },
-  weija: {
+  7: {
     url: 'weija',
     thumb: 'CKD_344x290_7.jpg',
     location: 'PRESIDIO, CA',
@@ -176,7 +176,7 @@ module.exports = {
       'Weija_1216x716px_11.jpg': 'is-full',
     }
   },
-  sho13: {
+  8: {
     url: 'sho13',
     thumb: 'CKD_344x290_8.jpg',
     location: 'PACIFIC HEIGHTS, CA',
@@ -198,7 +198,7 @@ module.exports = {
       'Show_558x837px_8.jpg': 'is-right',
     }
   },
-  quegr: {
+  9: {
     url: 'quegr',
     thumb: 'CKD_344x290_9.jpg',
     location: 'COW HOLLOW, CA',

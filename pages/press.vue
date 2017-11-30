@@ -5,7 +5,7 @@
     .press
       .kit(v-in-viewport)
         .image.image_sunset
-        p.is-c4b SUNSET MAGAZINE | October 2017
+        p.is-c4b SUNSET | October 2017
       .kit(v-in-viewport)
         .image.image_modern
         p.is-c4b MODERN LUXURY | Fall 2017
@@ -29,7 +29,7 @@
         p.is-c4b HOUSE BEAUTIFUL | September 2012
       .kit(v-in-viewport)
         .image.image_luxe
-        p.is-c4b LUXE MAGAZINE | January/February 2017
+        p.is-c4b LUXE | January/February 2017
       .clear
 </template>
 

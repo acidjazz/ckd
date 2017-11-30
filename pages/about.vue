@@ -1,7 +1,7 @@
 <template lang="pug">
 #About.page
   .container
-    .bigtitle.is-h1(v-in-viewport) ABOUT CKD
+    .bigtitle.is-h1(v-in-viewport) ABOUT THE FIRM
     .clear
     .sections
       .section
@@ -14,7 +14,7 @@
         p(v-in-viewport) We believe that a commercial space can still feel like a home - albeit one without all of that pesky laundry to do. We bring an elevated aesthetic and a healthy dose of fun to all of our hospitality projects.
       .section
         .thumb.thumb_lifestyle(v-in-viewport)
-        .title.is-c4b(v-in-viewport) LIFE STYLE
+        .title.is-c4b(v-in-viewport) LIFESTYLE
         p(v-in-viewport) Whether it's organizing a big launch event or styling an intimate family photo shoot, we are happy to step in to take care of all the details for you. Life should be celebrated, and we're here to help.
       .clear
     .bigtitle.is-h1(v-in-viewport) ABOUT THE PRINCIPAL
