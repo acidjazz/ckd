@@ -1,7 +1,7 @@
 <template lang="pug">
 .card.is-bg-iceberg
   .container
-    .title.is-froly(v-in-viewport,v-if="page === 'Home'") tailored interests
+    .title.is-froly(v-in-viewport,v-if="page === 'Home'") established 2011
     .title.is-froly.title-contact(v-in-viewport,v-if="page === 'Contact'") contact
     .title.is-froly.title-press(v-in-viewport,v-if="page === 'Press'") press
 
@@ -24,7 +24,7 @@
         a(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") 2100 Bryant Srreet
         a(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") San Francisco, CA 94110
 
-    .est(v-in-viewport,v-if="page === 'Home'")
+    //.est(v-in-viewport,v-if="page === 'Home'")
       .year.is-c2 2011
       .copy.is-c3 established
     .copy.is-c4(v-in-viewport,v-if="page === 'Home'") Catherine Kwong Design specializes in high-end residential and hospitality projects, with an emphasis on modern architecture and custom detailing. The firm brings a fresh approach to elegant, tailored interiors-mixing modern with vintage; high art with personal treasures- to create moments of unexpected beauty.
@@ -46,7 +46,7 @@
       transform rotate(-90deg)
       margin-top 70px
       letter-spacing 5px
-      margin-top 130px
+      margin-top 70px
       &.title-contact
         margin-top 70px
       &.title-press
@@ -72,7 +72,7 @@
 
     > .copy
       inViewport(0.1)
-      width 400px
+      width 600px
       float right
       line-height 30px
       margin-right 30px

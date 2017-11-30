@@ -7,17 +7,17 @@
     .logo(v-if="page === 'Home'",v-in-viewport)
       include ../static/logo.svg
 
-    Address(v-if="page === 'Home'",v-in-viewport)
+    CAddress(v-if="page === 'Home'",v-in-viewport)
     Socials(v-if="page === 'Home'",v-in-viewport)
 </template>
 
 <script>
-import Address from '~/components/Address'
+import CAddress from '~/components/CAddress'
 import Socials from '~/components/Socials'
 import inViewportDirective from 'vue-in-viewport-directive'
 export default {
   directives: { 'in-viewport': inViewportDirective },
-  components: { Address, Socials },
+  components: { CAddress, Socials },
   props: {
     page: {
       type: String,
@@ -83,11 +83,10 @@ export default {
 
 @media all and (min-width: 1px) and (max-width: 1000px)
   .hero
-    padding 10px
     > .container
       > .logo
         margin-top 25vh
-        width 100%
+        width 90%
         height 260px
 
 </style>

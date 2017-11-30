@@ -52,6 +52,10 @@ li
     height inherit
     > path
       fill white
+      transition fill 0.3s ease
+      
+a.seal:hover > svg > path
+  fill rgba(white, 0.5)
 
 
 .address, .socials
@@ -80,27 +84,29 @@ li
     text-decoration none
     color white
     display block
-    margin 4px 0 0 0
     padding 2px 10px
-    &:hover
-      color rgba(white, 0.5)
-      text-decoration underline
+    > a
+      color white
+      text-decoration none
+      &:hover
+        color rgba(white, 0.5)
+        text-decoration underline
 
 @media all and (min-width: 1px) and (max-width: 1000px)
   .address,
   .socials
-    font-size 10px  
-    line-height 14px
+    font-size 8px
+    line-height 11px
     bottom 20px
   .address
     left 10px
   .socials
     right 10px
+    > .social
+      padding 0px
+      margin 0px
   .seal
     padding-top 20px
     padding-left 20px
     width 45px
     height 45px
-
-
-

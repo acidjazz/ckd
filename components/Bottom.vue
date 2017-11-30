@@ -2,19 +2,15 @@
 #Bottom.is-c1sb
   .container
     .menu
-      a.option(@click="$store.commit('modalOn')") inquire
-      .clear
-      a.option(@click="$store.commit('modalOn')") press
-      .clear
       .copy &copy; CATHERINE KWONG DESIGN, 2011
-      .copy SITE BY DESIGNSAKE STUDIO
+      a.copy(href="https://designsakestudio.com",target="_new") SITE BY DESIGNSAKE STUDIO
 
     .baddress
       .copy CATHERINE KWONG DESIGN
       a.copy(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") 2100 Bryant street
       a.copy(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") san francisco, ca
       a.copy(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") 9.4.1.1.0
-      .socials
+      //.bsocials
         a.social.social_pinterest pinterest
         .separator
         a.social.social_instagram instagram
@@ -33,6 +29,8 @@ json('../assets/colors.json')
       > a.option,
       > .copy
         padding 4px 0
+        color black
+        text-decoration none
       > a.option
         display inline-block
         cursor pointer
@@ -46,7 +44,7 @@ json('../assets/colors.json')
         color black
         text-decoration none
         display block
-      > .socials
+      > .bsocials
         padding 10px 0 0 0
         > .social,
         > .separator

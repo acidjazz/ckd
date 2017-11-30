@@ -18,22 +18,33 @@
           include ../static/seal.svg
 
         .options
-          router-link.option(to="/",@click.native="on = false").is-h1 Projects
+          router-link.option(to="/",@click.native="scrollTo('#Projects')").is-h1 Projects
           router-link.option(to="/about",@click.native="on = false").is-h1 About
           router-link.option(to="/press",@click.native="on = false").is-h1 Press
           router-link.option(to="/contact",@click.native="on = false").is-h1 Contact
 
-        Address
+        CAddress
         Socials
 
 </template>
 
 
 <script>
-import Address from '~/components/Address'
+import CAddress from '~/components/CAddress'
 import Socials from '~/components/Socials'
 export default {
-  components: { Address, Socials },
+  components: { CAddress, Socials },
+  methods: {
+    scrollTo (el) {
+      this.on = false
+      setTimeout(() => {
+        document.querySelector(el).scrollIntoView({
+          block: 'start',
+          behavior: 'smooth',
+        })
+      }, 600)
+    },
+  },
   data () {
     return {
       on: false,
@@ -86,7 +97,7 @@ json('../assets/colors.json')
       position absolute
       transition z-index 0.2s ease-in-out 0s, transform 0.25s ease-in-out
       top 60px
-      right 60px
+      right 0px
       clear both
       width 60px
       height 40px

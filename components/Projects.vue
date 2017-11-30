@@ -21,6 +21,7 @@ section#Projects.section
 json('../assets/colors.json')
 #Projects
   > .container
+    padding 60px 0
     > .title
       float left
       padding 0 0 20px 0
@@ -34,8 +35,8 @@ json('../assets/colors.json')
         position relative
         width 33%
         inViewport(0)
-        for i in 1..10
-          &:nth-child({i})
+        for i in 1..3
+          &:nth-child(3n+{i})
             inViewport(0.2 * i)
         > .detail
           position absolute
