@@ -115,12 +115,19 @@
         width auto
         margin-right 0
         margin-top 30px
-
-      > .column
-        float none
+      > .quote
         width auto
-        text-align center
-        margin 0 0 30px 0
+        margin 30px auto
+
+      > .columns
+        display block
+        margin-top 20px
+        margin-left 0px
+        > .column
+          float none
+          width auto
+          text-align center
+          margin 0 0 30px 0
 </style>
 
 <script>

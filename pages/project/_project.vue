@@ -12,7 +12,6 @@
           .is-parallax.Masthead__image
             img(:src="`/projects/${project.url}/${project.hero.file}`")
 
-
   .body
     .title.is-h1b(v-in-viewport) {{ project.title }} 
     .copy(v-in-viewport) {{ project.copy }}
@@ -29,12 +28,37 @@
 
     .clear
 
+  .nav
+    .container
+      router-link.cta.prev(
+        v-if="$route.params.project !== '1'",
+        :to="'/project/' + prev($route.params.project)"
+      ) &lt; PREVIOUS
+      router-link.cta.next(
+        v-if="$route.params.project !== '9'",
+        :to="'/project/' + next($route.params.project)"
+      ) NEXT &gt;
+    .clear
+
 </template>
 
 <style lang="stylus">
 @import '../../assets/stylus/mixins'
 
 #Project
+  .nav
+    .cta
+      margin 20px
+      color black
+      text-decoration none
+      transition all .3s ease
+      &.prev
+        float left
+      &.next
+        float right
+      &:hover
+        color rgba(black, 0.5)
+        text-decoration underline
   > .banner
     padding 120px 0 90px 0
     > .container
@@ -148,7 +172,13 @@ export default {
   methods: {
     browser () {
       return process.browser
-    }
+    },
+    prev (param) {
+      return (parseInt(param) - 1).toString()
+    },
+    next (param) {
+      return (parseInt(param) + 1).toString()
+    },
   },
   computed:  {
 
@@ -157,16 +187,21 @@ export default {
 
       let images = {}
 
-      for (let [image, value] of Object.entries(project.gallery)) {
-        let sizes = image.match(/\d+/g)
-        images[image] = {
-          width: sizes[0],
-          height: sizes[1],
-          ises: value
+      if (project.gallery !== undefined) {
+
+        for (let [image, value] of Object.entries(project.gallery)) {
+          let sizes = image.match(/\d+/g)
+          images[image] = {
+            width: sizes[0],
+            height: sizes[1],
+            ises: value
+          }
         }
+
+        project.images = images
+
       }
 
-      project.images = images
 
       return project
     }

@@ -83,5 +83,11 @@ export default {
     > p
       text-align center
 
+@media all and (min-width: 1px) and (max-width: 1000px)
+  #Press
+    .press
+      .kit
+        width 100%
+        float none
 
 </style>
