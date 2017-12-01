@@ -6,7 +6,7 @@ let colors = require('./assets/colors.json')
 let config = {
   title: 'Catherine Kwong Design',
   description: 'Specializing in high-end residential and hospitality projects, with an emphasis on modern architecture and custom detailing. The firm brings a fresh approach to elegant, tailored interiors-mixing modern with vintage; high art with personal treasures- to create moments of unexpected beauty.',
-  url: 'http://catherinekwong.com',
+  url: 'http://staging.catherinekwong.com',
   image: '/share.jpg',
   keywords: 'design, interior'
 }
@@ -55,7 +55,6 @@ module.exports = {
       { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
       { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
       { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
-      // { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css', integrity: 'sha256-CDVQJfU+jJGU/oyDzvnzuGXbv0rz+SyBsPQwyn7x/jQ=', crossorigin: 'anonymous' },
     ]
   },
   /*
