@@ -24,7 +24,7 @@
       .image(v-in-viewport)
         .inner
       .copy(v-in-viewport)
-        .inner Catherine Kwong started her career in New York, designing luxury interiors for Studio Sofield and flagship stores for Ralph Lauren. After many amazing years of learning and cre- ating in the city that never sleeps, she moved home to her beloved San Francisco, and Catherine Kwong Design was open for business in 2011. Over the course of her career, Cath- erine has worked on interior design projects all over the world, some of which have been featured in Architectural Digest, Town and Country, and House Beautiful, among others. She has had the opportunity to work for and learn from such legendary designers as Bill Sofield, Ralph Lauren, and Paul Vincent Wiseman. Catherine holds degrees from Brown University and Parsons School of Design. In 2015, Catherine was named "Designer to Watch" by Architectural Digest.
+        .inner Catherine Kwong started her career in New York, designing luxury interiors for Studio Sofield and flagship stores for Ralph Lauren. After many amazing years of learning and cre- ating in the city that never sleeps, she moved home to her beloved San Francisco, and Catherine Kwong Design was open for business in 2011. Over the course of her career, Catherine has worked on interior design projects all over the world, some of which have been featured in Architectural Digest, Town and Country, and House Beautiful, among others. She has had the opportunity to work for and learn from such legendary designers as Bill Sofield, Ralph Lauren, and Paul Vincent Wiseman. Catherine holds degrees from Brown University and Parsons School of Design. In 2015, Catherine was named "Designer to Watch" by Architectural Digest.
       .clear
 
 </template>
