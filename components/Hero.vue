@@ -1,76 +1,98 @@
 <template lang="pug">
-.hero
+.hero(v-on:scroll="scroll()",:class="{'hero-Home': page === 'Home', 'hero-Contact': page === 'Contact'}")
   .container
-    .seal
+    .seal(v-if="page === 'Home'",v-in-viewport)
       include ../static/seal.svg
-    .logo
-      include ../static/logo.svg
 
-    a.address(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new").is-c1b
-      .copy 295 kansas street
-      .copy san francisco, ca
-      .copy 9.4.1.0.3
+    .logo(v-if="page === 'Home'",v-in-viewport)
+      img(src="/logo.svg")
 
-    .socials.is-c1b
-      a.social.social_pinterest(@click="$store.commit('modalOn')") pinterest
-      a.social.social_instagra(@click="$store.commit('modalOn')") instagram
+    CAddress(v-if="page === 'Home'",v-in-viewport)
+    Socials(v-if="page === 'Home'",v-in-viewport)
 </template>
 
-<style lang="stylus">
+<script>
+import CAddress from '~/components/CAddress'
+import Socials from '~/components/Socials'
+import inViewportDirective from 'vue-in-viewport-directive'
+export default {
+  directives: { 'in-viewport': inViewportDirective },
+  components: { CAddress, Socials },
+  props: {
+    page: {
+      type: String,
+      default: 'Home',
+    }
+  },
+  methods: {
+    scroll (event) {
+      if (window.scrollY < window.innerHeight) {
+        if (this.$store.state.menu !== 'white') {
+          this.$store.commit('menuColor', 'white')
+        }
+      }
+      if (window.scrollY > window.innerHeight) {
+        if (this.$store.state.menu !== 'black') {
+          this.$store.commit('menuColor', 'black')
+        }
+      }
+    }
+  },
 
+  created () {
+    if (process.browser) {
+      window.addEventListener('scroll', this.scroll)
+    }
+  },
+  destroyed () {
+    if (process.browser) {
+      window.removeEventListener('scroll', this.scroll)
+    }
+  },
+
+}
+</script>
+
+<style lang="stylus">
+@import '../assets/stylus/mixins'
 .hero
-  background-image url('/static/banner.jpg')
   background-size cover
   background-position 50% 50%
-  padding 60px
   position relative
+  &.hero-Home
+    height 100vh
+    background-image url('/static/banner.jpg')
+  &.hero-Contact
+    height 80vh
+    background-image url('/static/contact.jpg')
   > .container
-    > .seal
-      width 60px
-      height 60px
-      > svg
-        width inherit
-        height inherit
-        > circle
-          fill none
-          stroke white
-          stroke-width 3
-          border 10px solid white
-        > path
-          fill white
+    height 100%
 
     > .logo
-      width 1000px
+      width 800px
       margin auto
-
-    > .socials,
+      margin-top 22vh
+      inViewportScale(0)
+      > svg > path
+        fill white
+    > .seal
+      inViewportFade(0.2)
     > .address
-      color white
-      letter-spacing 3px
-      text-transform uppercase
-      text-decoration none
-      position absolute
-      bottom 30px
-    > .address
-      left 30px
+      inViewportFade(0.3)
     > .socials
-      right 30px
-      > .social
-        display block
-        cursor pointer
-        &:hover
-          background-color white
-          color black
+      inViewportFade(0.4)
+
 
 @media all and (min-width: 1px) and (max-width: 1000px)
   .hero
-    padding 10px
     > .container
       > .logo
-        margin-top 30px
-        width 100%
+        margin-top 25vh
+        width 90%
         height 260px
-      > .socials, > .address
-        font-size 10px
+      > .address
+        display none
+      > .socials
+        display none
 
 </style>

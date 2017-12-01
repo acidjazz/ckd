@@ -1,7 +1,7 @@
 <template lang="pug">
-.page.page_index
+#Index.page
   Hero
-  Card
+  Card(page="Home")
   Projects
 </template>
 
@@ -10,6 +10,9 @@ import Hero from '~/components/Hero.vue'
 import Card from '~/components/Card.vue'
 import Projects from '~/components/Projects.vue'
 export default {
-  components: { Hero, Card, Projects }
+  components: { Hero, Card, Projects },
+  created () {
+    this.$store.commit('menuColor', 'white')
+  },
 }
 </script>
