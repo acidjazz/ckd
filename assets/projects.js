@@ -18,7 +18,7 @@ module.exports = {
       'Show_724x544px_5.jpg': 'is-clear is-left',
       'Show_392x544px_6.jpg': 'is-right',
       'Show_558x698px_7.jpg': 'is-left',
-      'Show_558x698px_8.jpg': 'is-right',
+      'Show_558x698px_8.jpg': 'is-right is-double',
       'Show_1216x846px_9.jpg': 'is-full',
     }
   },
