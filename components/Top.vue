@@ -127,8 +127,7 @@ json('../assets/colors.json')
         > span
           display block
           position absolute
-          height 4px
-          border-radius 9px
+          height 3px
           width 100%
           opacity 1
           left 0
