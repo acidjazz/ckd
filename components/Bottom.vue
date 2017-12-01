@@ -2,8 +2,8 @@
 #Bottom.is-c1sb
   .container
     .menu
-      .copy &copy; CATHERINE KWONG DESIGN, 2011
-      a.copy(href="https://designsakestudio.com",target="_new") SITE BY DESIGNSAKE STUDIO
+      .copy.is-c1b &copy; CATHERINE KWONG DESIGN, 2011
+      a.copy.is-c1b(href="https://designsakestudio.com",target="_new") SITE BY DESIGNSAKE STUDIO
 
     //.baddress
       .copy CATHERINE KWONG DESIGN
