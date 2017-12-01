@@ -103,7 +103,7 @@
 
 @media all and (min-width: 1px) and (max-width: 1000px)
   .card
-    padding 30px 10px
+    padding 30px 20px
     > .container
       > .title
         transform rotate(0deg)
