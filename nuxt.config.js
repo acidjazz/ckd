@@ -6,7 +6,7 @@ let colors = require('./assets/colors.json')
 let config = {
   title: 'Catherine Kwong Design',
   description: 'An acclaimed San Francisco interior design firm. Catherine Kwong Design specializes in high-end residential and hospitality projects, with an emphasis on modern architecture and custom detailing. The firm brings a fresh approach to elegant, tailored interiors — mixing modern with vintage; fine art with personal treasures — to create moments of unexpected beauty.',
-  url: 'http://staging.catherinekwong.com',
+  url: 'https://catherinekwong.com',
   image: '/share.jpg',
   keywords: 'design, interior'
 }
