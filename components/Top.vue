@@ -153,6 +153,8 @@ json('../assets/colors.json')
   #Top
     .container
       .burger
-        top 30px
-        right 30px
+        top 20px
+        right 20px
+        width 40px
+        height 20px
 </style>
