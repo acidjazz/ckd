@@ -90,5 +90,9 @@ export default {
         margin-top 25vh
         width 90%
         height 260px
+      > .address
+        display none
+      > .socials
+        display none
 
 </style>
