@@ -89,6 +89,7 @@
       float right
       line-height 30px
       margin-right 30px
+      margin-top -40px
 
     .est
       inViewport(0.2)
