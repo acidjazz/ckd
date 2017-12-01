@@ -28,7 +28,7 @@
 
     .clear
 
-  .nav
+  .nav.is-c4
     .container
       router-link.cta.prev(
         v-if="$route.params.project !== '1'",
@@ -114,7 +114,7 @@
       &.is-full
         clear both
         margin 30px 0
-        overflow auto
+        overflow hidden
         > .image
           inViewport(0)
       > .image

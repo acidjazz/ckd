@@ -74,12 +74,12 @@ module.exports = {
       'Brown_657x458px_4.jpg': 'is-clear is-left',
       'Brown_458x458px_5.jpg': 'is-right',
 
-      'Brown_558x797px_6.jpg': 'is-left',
+      'Brown_558x794px_6.jpg': 'is-left',
       'Brown_558x367_7.jpg': 'is-right',
       'Brown_558x367px_8.jpg': 'is-right',
 
       'Brown_558x815px_9.jpg ': 'is-clear is-left',
-      'Brown_558x815px_10.jpg': 'is-right',
+      'Brown_558x815px_10.jpg': 'is-right is-double',
       'Brown_1216x805px_11.jpg': 'is-full',
 
     },

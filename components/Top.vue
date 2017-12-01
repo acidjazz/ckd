@@ -99,7 +99,7 @@ json('../assets/colors.json')
       position absolute
       transition z-index 0.2s ease-in-out 0s, transform 0.25s ease-in-out
       top 60px
-      right 0px
+      right 2px
       clear both
       width 50px
       height 30px
