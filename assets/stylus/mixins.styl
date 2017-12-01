@@ -14,14 +14,14 @@ inViewport(delay)
 
 inViewportScale(delay)
   opacity 0
-  transform scale(0.90)
-  transition opacity 1s ease-in-out unit(delay, 's'), transform 1s ease-in-out unit(delay, 's')
+  transform scale(0.95)
+  transition opacity 2s ease-in-out unit(delay, 's'), transform 2s ease-in-out unit(delay, 's')
   &.below-viewport
     opacity 0
     transform scale(1.1)
   &.above-viewport
     opacity 0.6
-    transform scale(0.90)
+    transform scale(0.95)
   &.in-viewport
     opacity 1
     transform scale(1)
