@@ -5,7 +5,7 @@
       include ../static/seal.svg
 
     .logo(v-if="page === 'Home'",v-in-viewport)
-      include ../static/logo.svg
+      img(src="/logo.svg")
 
     CAddress(v-if="page === 'Home'",v-in-viewport)
     Socials(v-if="page === 'Home'",v-in-viewport)
@@ -73,6 +73,8 @@ export default {
       margin auto
       margin-top 22vh
       inViewportScale(0)
+      > svg > path
+        fill white
     > .seal
       inViewportFade(0.2)
     > .address
