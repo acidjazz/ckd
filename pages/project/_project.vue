@@ -4,9 +4,9 @@
     .container
       .location.is-h3 {{ project.location }}
       //.image(:style="`width: ${project.hero.width}px; height: ${project.hero.height}px;`")
-      .image(v-if="browser()")
-        parallax
-          img(:src="`/projects/${project.url}/${project.hero.file}`")
+      .image.no-parallax(v-if="browser()")
+        //parallax
+        img(:src="`/projects/${project.url}/${project.hero.file}`")
       .image(v-else)
         .Masthead
           .is-parallax.Masthead__image
@@ -73,6 +73,13 @@
       > .image > .Masthead
         height 70vh !important
         min-height 70vh !important
+      > .image.no-parallax
+        height 70vh
+        min-height 70vh
+        overflow hidden
+        > img
+          width 100%
+          height 100%
 
   > .body
     max-width 900px
