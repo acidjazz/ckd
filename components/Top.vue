@@ -85,6 +85,8 @@ json('../assets/colors.json')
           margin-left 40px
           border-bottom 4px solid transparent
           transition all 0.3s ease 0s
+          text-transform uppercase
+          letter-spacing 2px
           &:hover
             color rgba(white, 0.30)
             border-bottom 4px solid rgba(white, 0.30)
