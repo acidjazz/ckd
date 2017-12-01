@@ -67,16 +67,18 @@
         transform rotate(-90deg)
         position absolute
         bottom 95px
-        left -130px
+        left -120px
         width 220px
         height 30px
       > .image > .Masthead
         height 70vh !important
         min-height 70vh !important
       > .image.no-parallax
+        margin auto
         height 70vh
         min-height 70vh
         overflow hidden
+        width 1176px
         > img
           width 100%
           height 100%
