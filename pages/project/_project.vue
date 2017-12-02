@@ -80,10 +80,9 @@
         background-size cover
         background-position 50% 50%
         margin auto
-        height 70vh
-        min-height 70vh
-        overflow hidden
         width 1176px
+        height 800px
+        overflow hidden
         inViewportScale(0)
 
   > .body
@@ -141,6 +140,7 @@
           display none
         > .image.no-parallax
           width auto
+          height 50vh
     > .body
       padding 20px
       > .copy
