@@ -2,12 +2,14 @@
 #Project.page
   .banner
     .container
-      .location.is-h3 {{ project.location }}
+      .location.is-h3(v-in-viewport) {{ project.location }}
       //.image(:style="`width: ${project.hero.width}px; height: ${project.hero.height}px;`")
-      .image(v-if="browser()")
-        parallax
-          img(:src="`/projects/${project.url}/${project.hero.file}`")
-      .image(v-else)
+      .image.no-parallax(
+        :style="`background-image: url(/projects/${project.url}/${project.hero.file})`",
+        v-in-viewport
+      )
+        //parallax
+      //.image(v-else)
         .Masthead
           .is-parallax.Masthead__image
             img(:src="`/projects/${project.url}/${project.hero.file}`")
@@ -64,26 +66,35 @@
     > .container
       position relative
       > .location
+        inViewportFade(1)
         transform rotate(-90deg)
         position absolute
         bottom 95px
-        left -130px
+        left -120px
         width 220px
         height 30px
       > .image > .Masthead
         height 70vh !important
         min-height 70vh !important
+      > .image.no-parallax
+        background-size cover
+        background-position 50% 50%
+        margin auto
+        width 1176px
+        height 774px
+        overflow hidden
+        inViewportScale(0)
 
   > .body
     max-width 900px
     margin auto
     padding-bottom 90px
     > .title
-      inViewport(0.1)
+      inViewportFade(1.1)
     > .copy
       padding 60px 0 0 0
       width 540px
-      inViewport(0.2)
+      inViewportFade(1.2)
 
   > .gallery
     width 1176px
@@ -127,6 +138,9 @@
       > .container
         > .location
           display none
+        > .image.no-parallax
+          width auto
+          height 50vh
     > .body
       padding 20px
       > .copy
