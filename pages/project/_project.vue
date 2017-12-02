@@ -81,7 +81,7 @@
         background-position 50% 50%
         margin auto
         width 1176px
-        height 800px
+        height 774px
         overflow hidden
         inViewportScale(0)
 
