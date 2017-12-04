@@ -90,11 +90,11 @@
     margin auto
     padding-bottom 90px
     > .title
-      inViewportFade(1.1)
+      inViewportFade(0.1)
     > .copy
       padding 60px 0 0 0
       width 540px
-      inViewportFade(1.2)
+      inViewportFade(0.2)
 
   > .gallery
     width 1176px
