@@ -10,11 +10,11 @@
         .image.image_modern
         p.is-c4b SAN FRANCISCO | Fall 2017
       .kit(v-in-viewport)
-        .image.image_cali
-        p.is-c4b CALIFORNIA HOMES | Fall 2017
-      .kit(v-in-viewport)
         .image.image_elle1
         p.is-c4b ELLE DECOR | September 2017
+      .kit(v-in-viewport)
+        .image.image_cali
+        p.is-c4b CALIFORNIA HOMES | Summer 2017
       .kit(v-in-viewport)
         .image.image_luxe
         p.is-c4b LUXE | January/February 2017
