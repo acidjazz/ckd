@@ -5,7 +5,7 @@
   .social.social_contact.is-c1s
     a(href="mailto:info@catherinekwong.com") info@catherinekwong.com
   .social.social_pinterest.is-c1s
-    a(href="https://www.instagram.com/catherinekwongdesign/",target="_new") pinterest
+    a(href="https://www.pinterest.com/CKDpins/",target="_new") pinterest
     span &nbsp;|&nbsp;
-    a(href="https://www.pinterest.com/CKDpins/",target="_new") instagram
+    a(href="https://www.instagram.com/catherinekwongdesign/",target="_new") instagram
 </template>
