@@ -8,6 +8,7 @@
         :style="`background-image: url(/projects/${project.url}/${project.hero.file})`",
         v-in-viewport
       )
+        img(:src="`/projects/${project.url}/${project.hero.file}`")
         //parallax
       //.image(v-else)
         .Masthead
@@ -27,6 +28,7 @@
         v-in-viewport,
         :style="`width: ${image.width}px; height: ${image.height}px; background-image: url(/projects/${project.url}/${file})`"
       )
+        img(:src="`/projects/${project.url}/${file}`")
 
     .clear
 
@@ -48,6 +50,10 @@
 @import '../../assets/stylus/mixins'
 
 #Project
+  img
+    opacity 1
+    width 100%
+    height 100%
   .nav
     .cta
       margin 20px
@@ -100,6 +106,8 @@
     width 1176px
     margin auto
     > .tile
+      .image
+        overflow hidden
       &.is-left
         float left
         margin 30px 30px 30px 0
