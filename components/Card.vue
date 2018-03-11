@@ -5,7 +5,7 @@
     .title.is-froly.title-contact(v-in-viewport,v-if="page === 'Contact'") contact
     .title.is-froly.title-press(v-in-viewport,v-if="page === 'Press'") press
     .title.is-froly.title-about(v-in-viewport,v-if="page === 'About'") about
-    .title.is-froly.title-about(v-in-viewport,v-if="page === 'Jobs'") jobs
+    .title.is-froly.title-about(v-in-viewport,v-if="page === 'Jobs'") careers
 
     .quote(v-in-viewport,v-if="page === 'About'")
       p Catherine’s talents and strengths place her amidst the upper echelons of an emerging generation of young designers.
