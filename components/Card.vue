@@ -27,7 +27,7 @@
       .column(v-in-viewport,v-if="page === 'Contact'")
         .block
           .title.is-c4b DROP US A LINE
-          a(href="mailto:info@catherinekwong.com") E-mail
+          a(href="mailto:hello@catherinekwong.com") E-mail
           a(href="mailto:media@catherinekwong.com") Media Inquries
 
       .column(v-in-viewport,v-if="page === 'Contact'")

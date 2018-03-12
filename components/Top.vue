@@ -22,7 +22,7 @@
           router-link.option(to="/about",@click.native="on = false").is-h4 About
           router-link.option(to="/press",@click.native="on = false").is-h4 Press
           router-link.option(to="/contact",@click.native="on = false").is-h4 Contact
-          router-link.option(to="/jobs",@click.native="on = false").is-h4 jobs
+          router-link.option(to="/careers",@click.native="on = false").is-h4 Careers
 
         CAddress
         Socials
