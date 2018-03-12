@@ -5,6 +5,7 @@
     .title.is-froly.title-contact(v-in-viewport,v-if="page === 'Contact'") contact
     .title.is-froly.title-press(v-in-viewport,v-if="page === 'Press'") press
     .title.is-froly.title-about(v-in-viewport,v-if="page === 'About'") about
+    .title.is-froly.title-about(v-in-viewport,v-if="page === 'Jobs'") careers
 
     .quote(v-in-viewport,v-if="page === 'About'")
       p Catherine’s talents and strengths place her amidst the upper echelons of an emerging generation of young designers.
@@ -12,6 +13,9 @@
     .quote(v-in-viewport,v-if="page === 'Press'")
       p Kwong’s keen interest in modern architecture informs her inviting yet disciplined interiors, where the subtlest nuances sing.
       i - Architectual Digest
+    .quote(v-in-viewport,v-if="page === 'Jobs'")
+      p Measure twice, cut once.
+      // i — William Sofield
 
     .columns
 
@@ -23,7 +27,7 @@
       .column(v-in-viewport,v-if="page === 'Contact'")
         .block
           .title.is-c4b DROP US A LINE
-          a(href="mailto:info@catherinekwong.com") E-mail
+          a(href="mailto:hello@catherinekwong.com") E-mail
           a(href="mailto:media@catherinekwong.com") Media Inquries
 
       .column(v-in-viewport,v-if="page === 'Contact'")

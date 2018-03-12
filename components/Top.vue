@@ -22,6 +22,7 @@
           router-link.option(to="/about",@click.native="on = false").is-h4 About
           router-link.option(to="/press",@click.native="on = false").is-h4 Press
           router-link.option(to="/contact",@click.native="on = false").is-h4 Contact
+          router-link.option(to="/careers",@click.native="on = false").is-h4 Careers
 
         CAddress
         Socials
@@ -90,7 +91,7 @@ json('../assets/colors.json')
           &:hover
             color rgba(white, 0.30)
             border-bottom 4px solid rgba(white, 0.30)
-          for i in 1..4
+          for i in 1..5
             &:nth-child({i})
               transition-delay unit(0.03 * i, 's')
   > .container
@@ -148,7 +149,7 @@ json('../assets/colors.json')
 .fade-enter, .fade-leave-to
   opacity 0
   .options .option
-    transform translate(-15px, 0)
+    transform translate(-25px, 0)
 
 @media all and (min-width: 1px) and (max-width: 1000px)
   #Top
