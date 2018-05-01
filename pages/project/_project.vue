@@ -136,6 +136,10 @@
 
 @media all and (min-width: 1px) and (max-width: 1000px)
   #Project
+    img
+      width 100%
+      height 90vw
+      object-fit cover
     > .banner
       padding 90px 0 30px 0
       > .container
