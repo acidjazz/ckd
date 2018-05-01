@@ -18,7 +18,7 @@ for (let project of Object.keys(projects)) {
 
 module.exports = {
   /*
-  ** Headers 
+  ** Headers
   */
   head: {
     title: 'Catherine Kwong Design',
@@ -68,15 +68,12 @@ module.exports = {
   plugins: [
     {src: '~plugins/ga.js', ssr: false},
   ],
-  modules: [
-    '@nuxtjs/webpackmonitor',
-  ],
   build: {
     /*
     ** Run ESLINT on save
     */
     extend (config, ctx) {
-      if (ctx.dev && ctx.isClient) {
+      if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,

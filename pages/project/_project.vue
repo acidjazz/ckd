@@ -9,11 +9,6 @@
         v-in-viewport
       )
         img(:src="`/projects/${project.url}/${project.hero.file}`")
-        //parallax
-      //.image(v-else)
-        .Masthead
-          .is-parallax.Masthead__image
-            img(:src="`/projects/${project.url}/${project.hero.file}`")
 
   .body
     .title.is-h1b(v-in-viewport) {{ project.title }} 
@@ -141,6 +136,10 @@
 
 @media all and (min-width: 1px) and (max-width: 1000px)
   #Project
+    img
+      width 100%
+      height 90vw
+      object-fit cover
     > .banner
       padding 90px 0 30px 0
       > .container
@@ -184,10 +183,8 @@
 <script>
 import projects from '~/assets/projects.js'
 import inViewportDirective from 'vue-in-viewport-directive'
-import Parallax from 'vue-parallaxy'
 export default {
   directives: { 'in-viewport': inViewportDirective },
-  components: { Parallax },
   created () {
     this.$store.commit('menuColor', 'black')
   },

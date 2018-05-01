@@ -16,24 +16,22 @@
     "test": "echo No tests yet"
   },
   "dependencies": {
-    "@nuxtjs/webpackmonitor": "^0.0.3",
     "aeonian": "^1.0.9",
     "nuxt": "^1.0.0-rc8",
     "pug": "^2.0.0-rc.4",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
-    "vue-in-viewport-directive": "^1.1.4",
-    "vue-parallaxy": "^1.0.3"
+    "vue-in-viewport-directive": "^1.1.4"
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
+    "babel-eslint": "^8.2.3",
     "eslint": "^4.3.0",
-    "eslint-config-standard": "^10.2.1",
-    "eslint-loader": "^1.9.0",
-    "eslint-plugin-html": "^3.1.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.1.1",
-    "eslint-plugin-promise": "^3.5.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-html": "^4.0.3",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-standard": "^3.0.1"
   }
 }
