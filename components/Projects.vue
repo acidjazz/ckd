@@ -86,7 +86,7 @@ json('../assets/colors.json')
       float none
       text-align center
       font-size 30px
-      margin 20px 
+      margin 20px
     > .projects
       > .project
         width 100%

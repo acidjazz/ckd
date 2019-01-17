@@ -1,5 +1,23 @@
 module.exports = {
   1: {
+    url: 'seacliff',
+    thumb: 'CKD_344x290_0.jpg',
+    location: 'SAN FRANCISCO, CA',
+    title: 'SEACLIFF RETREAT',
+    hover: 'SEACLIFF',
+    copy: '',
+    hero: {
+      file: '1_2054x1352.png',
+      width: 1000,
+      height: 8000,
+    },
+    gallery: {
+      '2_974x602.png': 'is-left',
+      '3_974x602.png': 'is-right',
+    }
+  },
+  /*
+  1: {
     url: 'sho17',
     thumb: 'CKD_344x290_1.jpg',
     location: 'SAN FRANCISCO, CA',
@@ -22,6 +40,7 @@ module.exports = {
       'Show_1216x846px_9.jpg': 'is-full',
     }
   },
+  */
 
   2: {
     url: 'parbr',
