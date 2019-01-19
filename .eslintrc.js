@@ -1,24 +1,22 @@
 module.exports = {
   root: true,
-  parser: 'babel-eslint',
   env: {
     browser: true,
     node: true
   },
-  extends: 'standard',
+  parserOptions: {
+    parser: 'babel-eslint'
+  },
+  extends: [
+    'plugin:vue/recommended'
+  ],
   // required to lint *.vue files
   plugins: [
-    'html'
+    'vue'
   ],
   // add your custom rules here
   rules: {
-    'no-unused-vars': 0,
-    'quotes': 0,
-    'comma-dangle': 0,
-    'padded-blocks': 0,
-    'no-multi-spaces': 0,
-    'no-multiple-empty-lines': ['error', { "max": 2, "maxEOF": 2, "maxBOF": 2, }],
-    'key-spacing': 0
-  },
-  globals: {}
+    'no-console': process.env.APP_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.APP_ENV === 'production' ? 'error' : 'off'
+  }
 }

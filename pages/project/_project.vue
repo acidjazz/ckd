@@ -11,7 +11,7 @@
         img(:src="`/projects/${project.url}/${project.hero.file}`")
 
   .body
-    .title.is-h1b(v-in-viewport) {{ project.title }} 
+    .title.is-h1b(v-in-viewport) {{ project.title }}
     .copy(v-in-viewport) {{ project.copy }}
 
   .gallery
@@ -163,11 +163,11 @@
         &.is-right
           float none
           clear both
-          margin 0 
+          margin 0
         &.is-full
           float none
           clear both
-          margin 0 
+          margin 0
         > .image
           width 90vw !important
           height 90vw !important
@@ -181,29 +181,28 @@
 </style>
 
 <script>
-import projects from '~/assets/projects.js'
+import projects from '@/mixins/projects.js'
 import inViewportDirective from 'vue-in-viewport-directive'
 export default {
   directives: { 'in-viewport': inViewportDirective },
-  created () {
-    this.$store.commit('menuColor', 'black')
-  },
-  methods: {
-    browser () {
-      return process.browser
-    },
-    prev (param) {
-      return (parseInt(param) - 1).toString()
-    },
-    next (param) {
-      return (parseInt(param) + 1).toString()
-    },
-  },
+  mixins : [ projects ],
   computed:  {
 
-    project: function () {
-      let project = projects[this.$route.params.project]
+    current_project () {
+      if (this.projects[this.$route.params.project]) {
+        return this.projects[this.$route.params.project]
+      }
+      for (let project of this.projects) {
+        if (project.url === this.$route.params.project) {
+          return project
+        }
+      }
+      return false
+    },
 
+    project () {
+
+      let project = this.current_project
       let images = {}
 
       if (project.gallery !== undefined) {
@@ -225,6 +224,22 @@ export default {
       return project
     }
 
+  },
+
+  created () {
+    this.$store.commit('menuColor', 'black')
+  },
+
+  methods: {
+    browser () {
+      return process.browser
+    },
+    prev (param) {
+      return (parseInt(param) - 1).toString()
+    },
+    next (param) {
+      return (parseInt(param) + 1).toString()
+    },
   },
 
 }

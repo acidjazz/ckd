@@ -24,6 +24,16 @@ export default {
       default: 'Home',
     }
   },
+  created () {
+    if (process.browser) {
+      window.addEventListener('scroll', this.scroll)
+    }
+  },
+  destroyed () {
+    if (process.browser) {
+      window.removeEventListener('scroll', this.scroll)
+    }
+  },
   methods: {
     scroll (event) {
       if (window.scrollY < window.innerHeight) {
@@ -38,18 +48,6 @@ export default {
       }
     }
   },
-
-  created () {
-    if (process.browser) {
-      window.addEventListener('scroll', this.scroll)
-    }
-  },
-  destroyed () {
-    if (process.browser) {
-      window.removeEventListener('scroll', this.scroll)
-    }
-  },
-
 }
 </script>
 
@@ -61,7 +59,7 @@ export default {
   position relative
   &.hero-Home
     height 100vh
-    background-image url('/static/banner.jpg')
+    background-image url('/banner.jpg')
   &.hero-Contact
     height 80vh
     background-image url('/static/contact.jpg')
