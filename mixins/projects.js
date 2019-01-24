@@ -17,23 +17,25 @@ export default {
           hover: 'SEACLIFF',
           copy: '',
           hero: {
-            file: '1_2054x1352.png',
+            file: 'Seacliff_2054x1352_1.jpg',
             width: 1000,
             height: 8000,
           },
           gallery: {
-            'Seacliff_974x602_2.png': 'is-left',
-            'Seacliff_974x602_3.png': 'is-left',
-            'Seacliff_974x1310_4.png': 'is-right',
-            'Seacliff_2054x1230_5.png': 'is-full',
-            'Seacliff_686x950_6.png': '',
-            'Seacliff_1264x950_7.png': '',
-            'Seacliff_1338x996_8.png': '',
-            'Seacliff_610x996_9.png': '',
-            'Seacliff_1340x994_10.png': '',
-            'Seacliff_608x996_11.png': '',
-            'Seacliff_2054x1476_12.png': '',
+            // 'Seacliff_1216x800_1.jpg': '',
+            'Seacliff_558x750_4.jpg': 'is-right is-double',
+            'Seacliff_558x345_2.jpg': 'is-left',
+            'Seacliff_558x345_3.jpg': 'is-left',
+            'Seacliff_1216x800_5.jpg': 'is-full',
+            'Seacliff_392x543_6.jpg': 'is-left',
+            'Seacliff_724x543_7.jpg': 'is-right',
 
+            'Seacliff_724x543_8.jpg': 'is-left',
+            'Seacliff_392x543_9.jpg': 'is-right',
+
+            'Seacliff_724x543_10_.jpg': 'is-left',
+            'Seacliff_392x543_11.jpg': 'is-right is-double',
+            'Seacliff_1216x800_12.jpg': 'is-full',
           }
         },{
           url: 'sho17',

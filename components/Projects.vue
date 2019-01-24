@@ -3,6 +3,7 @@ section#Projects.section
   .container
     .title.is-h1.is-uppercase featured projects
     .clear
+    br
     router-link.project-featured(to="/project/seacliff",v-in-viewport)
       .project-image
         img(:src="`/projects/${project_featured.thumb}`")

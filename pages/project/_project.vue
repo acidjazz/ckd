@@ -29,14 +29,8 @@
 
   .nav.is-c4
     .container
-      router-link.cta.prev(
-        v-if="$route.params.project !== '1'",
-        :to="'/project/' + prev($route.params.project)"
-      ) &lt; PREVIOUS
-      router-link.cta.next(
-        v-if="$route.params.project !== '9'",
-        :to="'/project/' + next($route.params.project)"
-      ) NEXT &gt;
+      router-link.cta.prev(:to="`/project/${previous_project.url}`") &lt; PREVIOUS
+      router-link.cta.next(:to="`/project/${next_project.url}`") NEXT &gt;
     .clear
 
 </template>
@@ -189,16 +183,56 @@ export default {
   computed:  {
 
     current_project () {
+
       if (this.projects[this.$route.params.project]) {
         return this.projects[this.$route.params.project]
       }
+
       for (let project of this.projects) {
         if (project.url === this.$route.params.project) {
           return project
         }
       }
+
       return false
+
     },
+
+    project_urls () {
+      return this.projects.map( (project) => project.url)
+    },
+
+    next_project () {
+
+      let index = this.project_urls.indexOf(this.current_project.url)+1
+      if (index > (this.project_urls.length+1) ) {
+        index = 0
+      }
+      for (var project of this.projects) {
+        if (project.url === this.project_urls[index]) {
+          return project
+        }
+      }
+
+      return project
+    },
+
+    previous_project () {
+
+      let index = this.project_urls.indexOf(this.current_project.url)-1
+      if (index < 0) {
+        index = this.project_urls.length-1
+      }
+      for (var project of this.projects) {
+        if (project.url === this.project_urls[index]) {
+          return project
+        }
+      }
+
+      return project
+    },
+
+
 
     project () {
 
