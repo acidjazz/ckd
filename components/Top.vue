@@ -35,6 +35,11 @@ import CAddress from '~/components/CAddress'
 import Socials from '~/components/Socials'
 export default {
   components: { CAddress, Socials },
+  data () {
+    return {
+      on: false,
+    }
+  },
   methods: {
     scrollTo (el) {
       this.on = false
@@ -46,11 +51,6 @@ export default {
       }, 800)
     },
   },
-  data () {
-    return {
-      on: false,
-    }
-  }
 }
 </script>
 
@@ -143,7 +143,7 @@ json('../assets/colors.json')
           &:nth-child(4)
             top 28px
 
-.fade-enter-active, .fade-leave-active 
+.fade-enter-active, .fade-leave-active
   transition all .5s
 
 .fade-enter, .fade-leave-to

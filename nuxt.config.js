@@ -1,6 +1,4 @@
 
-let projects = require('./assets/projects.js')
-
 let colors = require('./assets/colors.json')
 
 let config = {
@@ -12,9 +10,16 @@ let config = {
 }
 
 let routes = []
-for (let project of Object.keys(projects)) {
-  routes.push(`/project/${project}`)
-}
+routes.push('/project/seacliff')
+routes.push('/project/sho17')
+routes.push('/project/parbr')
+routes.push('/project/brown')
+routes.push('/project/resma')
+routes.push('/project/shija')
+routes.push('/project/pacific')
+routes.push('/project/weija')
+routes.push('/project/sho13')
+routes.push('/project/quegr')
 
 module.exports = {
   /*

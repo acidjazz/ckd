@@ -11,8 +11,8 @@
         img(:src="`/projects/${project.url}/${project.hero.file}`")
 
   .body
-    .title.is-h1b(v-in-viewport) {{ project.title }} 
-    .copy(v-in-viewport) {{ project.copy }}
+    .title.is-h1b(v-in-viewport) {{ project.title }}
+    .copy(v-if="project.copy",v-in-viewport) {{ project.copy }}
 
   .gallery
     .tile(
@@ -29,14 +29,8 @@
 
   .nav.is-c4
     .container
-      router-link.cta.prev(
-        v-if="$route.params.project !== '1'",
-        :to="'/project/' + prev($route.params.project)"
-      ) &lt; PREVIOUS
-      router-link.cta.next(
-        v-if="$route.params.project !== '9'",
-        :to="'/project/' + next($route.params.project)"
-      ) NEXT &gt;
+      router-link.cta.prev(:to="`/project/${previous_project.url}`") &lt; PREVIOUS
+      router-link.cta.next(:to="`/project/${next_project.url}`") NEXT &gt;
     .clear
 
 </template>
@@ -163,11 +157,11 @@
         &.is-right
           float none
           clear both
-          margin 0 
+          margin 0
         &.is-full
           float none
           clear both
-          margin 0 
+          margin 0
         > .image
           width 90vw !important
           height 90vw !important
@@ -181,29 +175,68 @@
 </style>
 
 <script>
-import projects from '~/assets/projects.js'
+import projects from '@/mixins/projects.js'
 import inViewportDirective from 'vue-in-viewport-directive'
 export default {
   directives: { 'in-viewport': inViewportDirective },
-  created () {
-    this.$store.commit('menuColor', 'black')
-  },
-  methods: {
-    browser () {
-      return process.browser
-    },
-    prev (param) {
-      return (parseInt(param) - 1).toString()
-    },
-    next (param) {
-      return (parseInt(param) + 1).toString()
-    },
-  },
+  mixins : [ projects ],
   computed:  {
 
-    project: function () {
-      let project = projects[this.$route.params.project]
+    current_project () {
 
+      if (this.projects[this.$route.params.project]) {
+        return this.projects[this.$route.params.project]
+      }
+
+      for (let project of this.projects) {
+        if (project.url === this.$route.params.project) {
+          return project
+        }
+      }
+
+      return false
+
+    },
+
+    project_urls () {
+      return this.projects.map( (project) => project.url)
+    },
+
+    next_project () {
+
+      let index = this.project_urls.indexOf(this.current_project.url)+1
+      if (index > (this.project_urls.length+1) ) {
+        index = 0
+      }
+      for (var project of this.projects) {
+        if (project.url === this.project_urls[index]) {
+          return project
+        }
+      }
+
+      return project
+    },
+
+    previous_project () {
+
+      let index = this.project_urls.indexOf(this.current_project.url)-1
+      if (index < 0) {
+        index = this.project_urls.length-1
+      }
+      for (var project of this.projects) {
+        if (project.url === this.project_urls[index]) {
+          return project
+        }
+      }
+
+      return project
+    },
+
+
+
+    project () {
+
+      let project = this.current_project
       let images = {}
 
       if (project.gallery !== undefined) {
@@ -225,6 +258,22 @@ export default {
       return project
     }
 
+  },
+
+  created () {
+    this.$store.commit('menuColor', 'black')
+  },
+
+  methods: {
+    browser () {
+      return process.browser
+    },
+    prev (param) {
+      return (parseInt(param) - 1).toString()
+    },
+    next (param) {
+      return (parseInt(param) + 1).toString()
+    },
   },
 
 }
