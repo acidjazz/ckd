@@ -12,7 +12,7 @@
 
   .body
     .title.is-h1b(v-in-viewport) {{ project.title }}
-    .copy(v-in-viewport) {{ project.copy }}
+    .copy(v-if="project.copy",v-in-viewport) {{ project.copy }}
 
   .gallery
     .tile(
