@@ -4,7 +4,7 @@ require('aeonian').config({
     prefix: 'ckd-'
   },
   environments: {
-    production: 'E2IPBARADINIRP',
+    production: 'EZ9SUO76Y8TX1',
     staging: 'E2Y9WMQODAMDG6',
   }
 }).deploy(process.argv[2])
