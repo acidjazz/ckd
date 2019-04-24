@@ -65,7 +65,7 @@ export default {
           location: 'SAN FRANCISCO, CA',
           title: 'PACIFIC HEIGHTS CONTEMPORARY',
           hover: 'pacific heights',
-          copy: "With a swath of sky and span of the San Francisco Bay as a backdrop, this architectural gem called for subtle layers and clean lines.  A parchment leather cabinet houses the clients' antique china collection, and a handblown glass chandelier floats above a dining table made for big family dinners - proof that contemporary architecture can feel comfortable and inviting without sacrificing an ounce of style.",
+          copy: "With a swath of sky and span of the San Francisco Bay as a backdrop, this architectural gem by John Maniscalco Architecture called for subtle layers and clean lines.  A parchment leather cabinet houses the clients' antique china collection, and a handblown glass chandelier floats above a dining table made for big family dinners - proof that contemporary architecture can feel comfortable and inviting without sacrificing an ounce of style.",
           hero: {
             file: 'Parbr_1216x800px_1.jpg',
             width: 1216,
