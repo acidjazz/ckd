@@ -242,7 +242,7 @@ export default {
       if (project.gallery !== undefined) {
 
         for (let [image, value] of Object.entries(project.gallery)) {
-          let sizes = image.match(/\d+/g)
+          let sizes = image.replace('2013', '').replace('2017', '').match(/\d+/g)
           images[image] = {
             width: sizes[0],
             height: sizes[1],
