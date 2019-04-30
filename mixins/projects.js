@@ -9,6 +9,35 @@ export default {
     return {
       projects: [
         {
+          url: 'hawaii',
+          thumb: 'CKD_344x290_1.jpg',
+          location: 'HONOLULU, HI',
+          hover: 'HAWAII',
+          title: 'HAWAII BEACH HOUSE',
+          copy: 'Cue the sound of ocean waves… Designing this modern Hawaii home was a dream come true. Zak Architecture created a perfect family of structures, nestled around a central courtyard. Raw cedar, white painted boards, and lava stone floors formed the materials palette, and the furnishings followed a single directive: elegance in simplicity.  A vintage Prouve daybed sits next to a deep sofa, perfect for lounging. Polished blocks of anthracite coal are used as tables, and handblown glass pendants hang from custom woven leather cords.  Large-scale artwork anchors each room, and it all lends itself to the reason for being there: expansive views out to those ocean waves.',
+          hero: {
+            file: 'CatherineKwongDesign_Hawaii_1216x800px_1.jpg',
+            width: 1216,
+            height: 800,
+          },
+          gallery: {
+            //'CatherineKwongDesign_Hawaii_1176x774px_1.jpg': '',
+            'CatherineKwongDesign_Hawaii_392x555px_2.jpg': 'is-left',
+            'CatherineKwongDesign_Hawaii_724x555px_3.jpg': 'is-right',
+            'CatherineKwongDesign_Hawaii_558x395px_4.jpg': 'is-left',
+            'CatherineKwongDesign_Hawaii_558x850px_6.jpg': 'is-right',
+            'CatherineKwongDesign_Hawaii_558x395px_5.jpg': 'is-left',
+            'CatherineKwongDesign_Hawaii_1176x760px_7.jpg': 'is-full',
+            //'CatherineKwongDesign_Hawaii_1216x786px_7.jpg': '',
+            'CatherineKwongDesign_Hawaii_766x570px_8.jpg': 'is-right',
+            'CatherineKwongDesign_Hawaii_350x570px_9.jpg': 'is-left',
+            'CatherineKwongDesign_Hawaii_558x780px_10.jpg': 'is-left',
+            'CatherineKwongDesign_Hawaii_558x780px_11.jpg': 'is-right',
+            'CatherineKwongDesign_Hawaii_1176x1120px_12.jpg': 'is-full',
+            // 'CatherineKwongDesign_Hawaii_1216x1158px_12.jpg': '',
+          },
+        },
+        {
           url: 'seacliff',
           thumb: 'CKD_featured.jpg',
           location: 'SAN FRANCISCO, CA',
