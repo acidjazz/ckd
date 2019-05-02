@@ -10,7 +10,8 @@ export default {
       projects: [
         {
           url: 'hawaii',
-          thumb: 'CKD_344x290_1.jpg',
+          thumb: 'CKD_344x290_Hawaii.jpg',
+          order: 1,
           location: 'HONOLULU, HI',
           hover: 'HAWAII',
           title: 'HAWAII BEACH HOUSE',
@@ -39,7 +40,7 @@ export default {
         },
         {
           url: 'seacliff',
-          thumb: 'CKD_featured.jpg',
+          thumb: 'CKD_Seacliff.jpg',
           location: 'SAN FRANCISCO, CA',
           featured: true,
           title: 'SEACLIFF RETREAT',
@@ -68,7 +69,8 @@ export default {
           }
         },{
           url: 'sho17',
-          thumb: 'CKD_344x290_1.jpg',
+          thumb: 'CKD_344x290_Showcase_17.jpg',
+          order: 5,
           location: 'SAN FRANCISCO, CA',
           title: 'CALIFORNIA MODERN',
           hover: 'showcase 2017',
@@ -90,7 +92,8 @@ export default {
           }
         },{
           url: 'parbr',
-          thumb: 'CKD_344x290_2.jpg',
+          thumb: 'CKD_344x290_PacificHeightsContemporary.jpg',
+          order: 2,
           location: 'SAN FRANCISCO, CA',
           title: 'PACIFIC HEIGHTS CONTEMPORARY',
           hover: 'pacific heights',
@@ -119,7 +122,8 @@ export default {
           }
         },{
           url: 'brown',
-          thumb: 'CKD_344x290_3.jpg',
+          thumb: 'CKD_344x290_BrownEstate.jpg',
+          order: 3,
           location: 'NAPA, CA',
           hover: 'DOWNTOWN NAPA',
           title: 'TOWN AND COUNTRY',
@@ -148,8 +152,9 @@ export default {
           },
         },{
           url: 'resma',
-          thumb: 'CKD_344x290_4.jpg',
+          thumb: 'CKD_344x290_Woodside.jpg',
           location: 'WOODSIDE, CA',
+          order: 4,
           hover: 'woodside',
           title: 'MODERN MEETS TRADITIONAL',
           copy: "What happens when a big-city family with a serious modern art collection moves to the country?  Well, not the country, exactly, but this traditional Tudor-style home is nestled among the hills of CatherineKwongDesign_Woodside, where you're as likely to see a horse on the road as you are a Tesla.  We used a sophisticated materials palette to update the house for our urbane family, bringing a strong point of view to this classic home.",
@@ -172,7 +177,8 @@ export default {
           }
         },{
           url: 'shija',
-          thumb: 'CKD_344x290_5.jpg',
+          thumb: 'CKD_344x290_PacificHeightsTownhome.jpg',
+          order: 7,
           location: 'PACIFIC HEIGHTS, CA',
           title: 'PACIFIC HEIGHTS TOWNHOUSE',
           hover: 'pacific heights',
@@ -190,7 +196,8 @@ export default {
           }
         },{
           url: 'pacific',
-          thumb: 'CKD_344x290_6.jpg',
+          thumb: 'CKD_344x290_JacksonSquare.jpg',
+          order: 6,
           location: 'SAN FRANCISCO, CA',
           hover: 'jackson square',
           title: 'JACKSON SQUARE LOFT',
@@ -211,7 +218,7 @@ export default {
           }
         },{
           url: 'weija',
-          thumb: 'CKD_344x290_7.jpg',
+          thumb: 'CKD_344x290_PresidioHeights.jpg',
           location: 'SAN FRANCISCO, CA',
           hover: 'PRESIDIO HEIGHTS',
           title: 'PRESIDIO HEIGHTS MODERN',
@@ -235,7 +242,8 @@ export default {
           }
         },{
           url: 'sho13',
-          thumb: 'CKD_344x290_8.jpg',
+          thumb: 'CKD_344x290_Showcase_13.jpg',
+          order: 8,
           location: 'SAN FRANCISCO, CA',
           hover: 'SHOWCASE 2013',
           title: 'CLASSICAL OVERTURE',
@@ -256,7 +264,8 @@ export default {
           }
         },{
           url: 'quegr',
-          thumb: 'CKD_344x290_9.jpg',
+          thumb: 'CKD_344x290_CowHollowRetreat.jpg',
+          order: 9,
           location: 'SAN FRANCISCO, CA',
           title: 'COW HOLLOW RETREAT',
           hover: 'COW HOLLOW',

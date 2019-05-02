@@ -4,15 +4,15 @@ section#Projects.section
     .title.is-h1.is-uppercase featured projects
     .clear
     br
-    router-link.project-featured(to="/project/seacliff",v-in-viewport)
+    nuxt-link.project-featured(to="/project/seacliff",v-in-viewport)
       .project-image
         img(:src="`/projects/${project_featured.thumb}`")
       .project-detail
         p {{ project_featured.hover }}
     .projects
-      router-link.project(
+      nuxt-link.project(
         v-in-viewport,
-        v-for="project, index in projects",
+        v-for="project, index in projects_sorted",
         v-if="!project.featured",
         :to="`/project/${project.url}`",
         :key="project.url")
@@ -37,6 +37,9 @@ export default {
         }
       }
       return false
+    },
+    projects_sorted () {
+      return this.projects.slice().sort((a,b) => a.order-b.order)
     },
   },
 }
