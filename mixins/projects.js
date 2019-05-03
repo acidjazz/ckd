@@ -37,59 +37,6 @@ export default {
             'CatherineKwongDesign_Hawaii_1176x1120px_12.jpg': 'is-full',
             // 'CatherineKwongDesign_Hawaii_1216x1158px_12.jpg': '',
           },
-        },
-        {
-          url: 'seacliff',
-          thumb: 'CKD_Seacliff.jpg',
-          location: 'SAN FRANCISCO, CA',
-          featured: true,
-          title: 'SEACLIFF RETREAT',
-          hover: 'SEACLIFF',
-          copy: '',
-          hero: {
-            file: 'CatherineKwongDesign_SeacliffRetreat_2054x1352_1.jpg',
-            width: 1000,
-            height: 8000,
-          },
-          gallery: {
-            // 'CatherineKwongDesign_SeacliffRetreat_1216x800_1.jpg': '',
-            'CatherineKwongDesign_SeacliffRetreat_558x750_4.jpg': 'is-right is-double',
-            'CatherineKwongDesign_SeacliffRetreat_558x345_2.jpg': 'is-left',
-            'CatherineKwongDesign_SeacliffRetreat_558x345_3.jpg': 'is-left',
-            'CatherineKwongDesign_SeacliffRetreat_1216x800_5.jpg': 'is-full',
-            'CatherineKwongDesign_SeacliffRetreat_392x543_6.jpg': 'is-left',
-            'CatherineKwongDesign_SeacliffRetreat_724x543_7.jpg': 'is-right',
-
-            'CatherineKwongDesign_SeacliffRetreat_724x543_8.jpg': 'is-left',
-            'CatherineKwongDesign_SeacliffRetreat_392x543_9.jpg': 'is-right',
-
-            'CatherineKwongDesign_SeacliffRetreat_724x543_10_.jpg': 'is-left',
-            'CatherineKwongDesign_SeacliffRetreat_392x543_11.jpg': 'is-right is-double',
-            'CatherineKwongDesign_SeacliffRetreat_1216x800_12.jpg': 'is-full',
-          }
-        },{
-          url: 'sho17',
-          thumb: 'CKD_344x290_Showcase_17.jpg',
-          order: 5,
-          location: 'SAN FRANCISCO, CA',
-          title: 'CALIFORNIA MODERN',
-          hover: 'showcase 2017',
-          copy: "For this year's Decorator Showcase, we decided to design a room for ourselves. One that was elemental and quietly romantic but also layered and rich in meaning. One that feels like what California feels like to us right now.",
-          hero: {
-            file: 'CatherineKwongDesign_Showcase2017_1216x800px_1.jpg',
-            width: 1216,
-            height: 800,
-          },
-          gallery: {
-            'CatherineKwongDesign_Showcase2017_558x750px_4.jpg': 'is-right',
-            'CatherineKwongDesign_Showcase2017_558x345px_2.jpg': 'is-left',
-            'CatherineKwongDesign_Showcase2017_558x345px_3.jpg': 'is-left',
-            'CatherineKwongDesign_Showcase2017_724x544px_5.jpg': 'is-clear is-left',
-            'CatherineKwongDesign_Showcase2017_392x544px_6.jpg': 'is-right',
-            'CatherineKwongDesign_Showcase2017_558x698px_7.jpg': 'is-left',
-            'CatherineKwongDesign_Showcase2017_558x698px_8.jpg': 'is-right is-double',
-            'CatherineKwongDesign_Showcase2017_1216x846px_9.jpg': 'is-full',
-          }
         },{
           url: 'parbr',
           thumb: 'CKD_344x290_PacificHeightsContemporary.jpg',
@@ -176,23 +123,27 @@ export default {
             'CatherineKwongDesign_Woodside_1215x730px_11.jpg': 'is-full',
           }
         },{
-          url: 'shija',
-          thumb: 'CKD_344x290_PacificHeightsTownhome.jpg',
-          order: 7,
-          location: 'PACIFIC HEIGHTS, CA',
-          title: 'PACIFIC HEIGHTS TOWNHOUSE',
-          hover: 'pacific heights',
-          copy: "When a client approaches you with inspiration images from the lookbooks of Valentino, Erdem, and Dior, you know it's going to be good.  Our fashionista client was looking to create a family home that reflected her signature sense of fun and style.  We took cues from her closet, as well as the runway, to inform this glamorous study in pattern-mixing.",
+          url: 'sho17',
+          thumb: 'CKD_344x290_Showcase_17.jpg',
+          order: 5,
+          location: 'SAN FRANCISCO, CA',
+          title: 'CALIFORNIA MODERN',
+          hover: 'showcase 2017',
+          copy: "For this year's Decorator Showcase, we decided to design a room for ourselves. One that was elemental and quietly romantic but also layered and rich in meaning. One that feels like what California feels like to us right now.",
           hero: {
-            file: 'CatherineKwongDesign_PacificHeightsTownhome_1216x800px_1.jpg',
+            file: 'CatherineKwongDesign_Showcase2017_1216x800px_1.jpg',
             width: 1216,
             height: 800,
           },
           gallery: {
-            'CatherineKwongDesign_PacificHeightsTownhome_766x510px_2.jpg': 'is-clear is-left',
-            'CatherineKwongDesign_PacificHeightsTownhome_350x510px_3.jpg': 'is-right',
-            'CatherineKwongDesign_PacificHeightsTownhome_340x517px_4.jpg': 'is-clear is-left',
-            'CatherineKwongDesign_PacificHeightsTownhome_776x517px_5.jpg': 'is-right',
+            'CatherineKwongDesign_Showcase2017_558x750px_4.jpg': 'is-right',
+            'CatherineKwongDesign_Showcase2017_558x345px_2.jpg': 'is-left',
+            'CatherineKwongDesign_Showcase2017_558x345px_3.jpg': 'is-left',
+            'CatherineKwongDesign_Showcase2017_724x544px_5.jpg': 'is-clear is-left',
+            'CatherineKwongDesign_Showcase2017_392x544px_6.jpg': 'is-right',
+            'CatherineKwongDesign_Showcase2017_558x698px_7.jpg': 'is-left',
+            'CatherineKwongDesign_Showcase2017_558x698px_8.jpg': 'is-right is-double',
+            'CatherineKwongDesign_Showcase2017_1216x846px_9.jpg': 'is-full',
           }
         },{
           url: 'pacific',
@@ -217,28 +168,23 @@ export default {
             'CatherineKwongDesign_JacksonSquareLoft_558x744px_8.jpg': 'is-right',
           }
         },{
-          url: 'weija',
-          thumb: 'CKD_344x290_PresidioHeights.jpg',
-          location: 'SAN FRANCISCO, CA',
-          hover: 'PRESIDIO HEIGHTS',
-          title: 'PRESIDIO HEIGHTS MODERN',
-          copy: "Three months to furnish a home?  No problem.  Our jet-setting clients came to us with a love for modern design and very tight timeline. We got to work sourcing vintage lighting and in-stock rugs, and designed custom brackets to add detail to reupholstered chairs.  Large-format artwork frames the scene in each room, anchoring a mix of bold patterns and luxe fabrics, to create a stylish sanctuary for beautiful living.",
+          url: 'shija',
+          thumb: 'CKD_344x290_PacificHeightsTownhome.jpg',
+          order: 7,
+          location: 'PACIFIC HEIGHTS, CA',
+          title: 'PACIFIC HEIGHTS TOWNHOUSE',
+          hover: 'pacific heights',
+          copy: "When a client approaches you with inspiration images from the lookbooks of Valentino, Erdem, and Dior, you know it's going to be good.  Our fashionista client was looking to create a family home that reflected her signature sense of fun and style.  We took cues from her closet, as well as the runway, to inform this glamorous study in pattern-mixing.",
           hero: {
-            file: 'CatherineKwongDesign_PresidioHeightsModern_1216x800px_1.jpg',
+            file: 'CatherineKwongDesign_PacificHeightsTownhome_1216x800px_1.jpg',
             width: 1216,
             height: 800,
           },
           gallery: {
-            'CatherineKwongDesign_PresidioHeightsModern_558x815px_2.jpg': 'is-clear is-left',
-            'CatherineKwongDesign_PresidioHeightsModern_558x815px_3.jpg': 'is-right',
-            'CatherineKwongDesign_PresidioHeightsModern_744x528px_4.jpg': 'is-clear is-left',
-            'CatherineKwongDesign_PresidioHeightsModern_372x528px_5.jpg': 'is-right',
-            // 'CatherineKwongDesign_PresidioHeightsModern_1216x810px_6.jpg': 'is-full',
-            'CatherineKwongDesign_PresidioHeightsModern_458x766px_7.jpg': 'is-clear is-left',
-            'CatherineKwongDesign_PresidioHeightsModern_658x766px_8.jpg': 'is-right',
-            'CatherineKwongDesign_PresidioHeightsModern_558x837px_9.jpg': 'is-clear is-left',
-            'CatherineKwongDesign_PresidioHeightsModern_558x837px_10.jpg': 'is-right is-double',
-            'CatherineKwongDesign_PresidioHeightsModern_1216x716px_11.jpg': 'is-full',
+            'CatherineKwongDesign_PacificHeightsTownhome_766x510px_2.jpg': 'is-clear is-left',
+            'CatherineKwongDesign_PacificHeightsTownhome_350x510px_3.jpg': 'is-right',
+            'CatherineKwongDesign_PacificHeightsTownhome_340x517px_4.jpg': 'is-clear is-left',
+            'CatherineKwongDesign_PacificHeightsTownhome_776x517px_5.jpg': 'is-right',
           }
         },{
           url: 'sho13',
@@ -282,6 +228,59 @@ export default {
             'CatherineKwongDesign_CowHollowRetreat_558x377px_5.jpg': 'is-left',
             'CatherineKwongDesign_CowHollowRetreat_558x814px_7.jpg': 'is-right',
             'CatherineKwongDesign_CowHollowRetreat_558x377px_6.jpg': 'is-left',
+          }
+        },{
+          url: 'weija',
+          thumb: 'CKD_344x290_PresidioHeights.jpg',
+          location: 'SAN FRANCISCO, CA',
+          hover: 'PRESIDIO HEIGHTS',
+          title: 'PRESIDIO HEIGHTS MODERN',
+          copy: "Three months to furnish a home?  No problem.  Our jet-setting clients came to us with a love for modern design and very tight timeline. We got to work sourcing vintage lighting and in-stock rugs, and designed custom brackets to add detail to reupholstered chairs.  Large-format artwork frames the scene in each room, anchoring a mix of bold patterns and luxe fabrics, to create a stylish sanctuary for beautiful living.",
+          hero: {
+            file: 'CatherineKwongDesign_PresidioHeightsModern_1216x800px_1.jpg',
+            width: 1216,
+            height: 800,
+          },
+          gallery: {
+            'CatherineKwongDesign_PresidioHeightsModern_558x815px_2.jpg': 'is-clear is-left',
+            'CatherineKwongDesign_PresidioHeightsModern_558x815px_3.jpg': 'is-right',
+            'CatherineKwongDesign_PresidioHeightsModern_744x528px_4.jpg': 'is-clear is-left',
+            'CatherineKwongDesign_PresidioHeightsModern_372x528px_5.jpg': 'is-right',
+            // 'CatherineKwongDesign_PresidioHeightsModern_1216x810px_6.jpg': 'is-full',
+            'CatherineKwongDesign_PresidioHeightsModern_458x766px_7.jpg': 'is-clear is-left',
+            'CatherineKwongDesign_PresidioHeightsModern_658x766px_8.jpg': 'is-right',
+            'CatherineKwongDesign_PresidioHeightsModern_558x837px_9.jpg': 'is-clear is-left',
+            'CatherineKwongDesign_PresidioHeightsModern_558x837px_10.jpg': 'is-right is-double',
+            'CatherineKwongDesign_PresidioHeightsModern_1216x716px_11.jpg': 'is-full',
+          }
+        }, {
+          url: 'seacliff',
+          thumb: 'CKD_Seacliff.jpg',
+          location: 'SAN FRANCISCO, CA',
+          featured: true,
+          title: 'SEACLIFF RETREAT',
+          hover: 'SEACLIFF',
+          copy: '',
+          hero: {
+            file: 'CatherineKwongDesign_SeacliffRetreat_2054x1352_1.jpg',
+            width: 1000,
+            height: 8000,
+          },
+          gallery: {
+            // 'CatherineKwongDesign_SeacliffRetreat_1216x800_1.jpg': '',
+            'CatherineKwongDesign_SeacliffRetreat_558x750_4.jpg': 'is-right is-double',
+            'CatherineKwongDesign_SeacliffRetreat_558x345_2.jpg': 'is-left',
+            'CatherineKwongDesign_SeacliffRetreat_558x345_3.jpg': 'is-left',
+            'CatherineKwongDesign_SeacliffRetreat_1216x800_5.jpg': 'is-full',
+            'CatherineKwongDesign_SeacliffRetreat_392x543_6.jpg': 'is-left',
+            'CatherineKwongDesign_SeacliffRetreat_724x543_7.jpg': 'is-right',
+
+            'CatherineKwongDesign_SeacliffRetreat_724x543_8.jpg': 'is-left',
+            'CatherineKwongDesign_SeacliffRetreat_392x543_9.jpg': 'is-right',
+
+            'CatherineKwongDesign_SeacliffRetreat_724x543_10_.jpg': 'is-left',
+            'CatherineKwongDesign_SeacliffRetreat_392x543_11.jpg': 'is-right is-double',
+            'CatherineKwongDesign_SeacliffRetreat_1216x800_12.jpg': 'is-full',
           }
         }
       ]

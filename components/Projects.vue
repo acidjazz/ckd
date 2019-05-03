@@ -12,7 +12,7 @@ section#Projects.section
     .projects
       nuxt-link.project(
         v-in-viewport,
-        v-for="project, index in projects_sorted",
+        v-for="project, index in projects",
         v-if="!project.featured",
         :to="`/project/${project.url}`",
         :key="project.url")
@@ -37,9 +37,6 @@ export default {
         }
       }
       return false
-    },
-    projects_sorted () {
-      return this.projects.slice().sort((a,b) => a.order-b.order)
     },
   },
 }
