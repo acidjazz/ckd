@@ -106,7 +106,7 @@ export default {
           title: 'MODERN MEETS TRADITIONAL',
           copy: "What happens when a big-city family with a serious modern art collection moves to the country?  Well, not the country, exactly, but this traditional Tudor-style home is nestled among the hills of CatherineKwongDesign_Woodside, where you're as likely to see a horse on the road as you are a Tesla.  We used a sophisticated materials palette to update the house for our urbane family, bringing a strong point of view to this classic home.",
           hero: {
-            file: 'CatherineKwongDesign_Woodside_1216x800px_1.jpg',
+            file: 'CatherineKwongDesign_Woodside_2432x1600.jpg',
             width: 1216,
             height: 800,
           },
