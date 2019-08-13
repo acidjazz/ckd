@@ -5,10 +5,10 @@
       .location.is-h3(v-in-viewport) {{ project.location }}
       //.image(:style="`width: ${project.hero.width}px; height: ${project.hero.height}px;`")
       .image.no-parallax(
-        :style="`background-image: url(/projects/${project.url}/${project.hero.file})`",
+        :style="`background-image: url(/projects/${project.folder}/${project.hero.file})`",
         v-in-viewport
       )
-        img(:src="`/projects/${project.url}/${project.hero.file}`")
+        img(:src="`/projects/${project.folder}/${project.hero.file}`")
 
   .body
     .title.is-h1b(v-in-viewport) {{ project.title }}
@@ -21,9 +21,9 @@
       )
       .image(
         v-in-viewport,
-        :style="`width: ${image.width}px; height: ${image.height}px; background-image: url(/projects/${project.url}/${file})`"
+        :style="`width: ${image.width}px; height: ${image.height}px; background-image: url(/projects/${project.folder}/${file})`"
       )
-        img(:src="`/projects/${project.url}/${file}`")
+        img(:src="`/projects/${project.folder}/${file}`")
 
     .clear
 

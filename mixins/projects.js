@@ -10,6 +10,7 @@ export default {
       projects: [
         {
           url: 'hawaii',
+          folder: 'hawaii',
           thumb: 'CKD_344x290_Hawaii.jpg',
           order: 1,
           location: 'KONA, HI',
@@ -38,7 +39,8 @@ export default {
             // 'CatherineKwongDesign_Hawaii_1216x1158px_12.jpg': '',
           },
         },{
-          url: 'parbr',
+          url: 'pacificheightscontemporary',
+          folder: 'parbr',
           thumb: 'CKD_344x290_PacificHeightsContemporary.jpg',
           order: 2,
           location: 'SAN FRANCISCO, CA',
@@ -69,6 +71,7 @@ export default {
           }
         },{
           url: 'brown',
+          folder: 'brown',
           thumb: 'CKD_344x290_BrownEstate.jpg',
           order: 3,
           location: 'NAPA, CA',
@@ -98,7 +101,8 @@ export default {
 
           },
         },{
-          url: 'resma',
+          url: 'woodside',
+          folder: 'resma',
           thumb: 'CKD_344x290_Woodside.jpg',
           location: 'WOODSIDE, CA',
           order: 4,
@@ -124,6 +128,7 @@ export default {
           }
         },{
           url: 'sho17',
+          folder: 'sho17',
           thumb: 'CKD_344x290_Showcase_17.jpg',
           order: 5,
           location: 'SAN FRANCISCO, CA',
@@ -146,7 +151,8 @@ export default {
             'CatherineKwongDesign_Showcase2017_1216x846px_9.jpg': 'is-full',
           }
         },{
-          url: 'pacific',
+          url: 'jacksonsquare',
+          folder: 'pacific',
           thumb: 'CKD_344x290_JacksonSquare.jpg',
           order: 6,
           location: 'SAN FRANCISCO, CA',
@@ -168,7 +174,8 @@ export default {
             'CatherineKwongDesign_JacksonSquareLoft_558x744px_8.jpg': 'is-right',
           }
         },{
-          url: 'shija',
+          url: 'pacificheightstownhouse',
+          folder: 'shija',
           thumb: 'CKD_344x290_PacificHeightsTownhome.jpg',
           order: 7,
           location: 'PACIFIC HEIGHTS, CA',
@@ -188,6 +195,7 @@ export default {
           }
         },{
           url: 'sho13',
+          folder: 'sho13',
           thumb: 'CKD_344x290_Showcase_13.jpg',
           order: 8,
           location: 'SAN FRANCISCO, CA',
@@ -209,7 +217,8 @@ export default {
             'CatherineKwongDesign_Showcase2013_558x837px_8.jpg': 'is-right',
           }
         },{
-          url: 'quegr',
+          url: 'cowhollow',
+          folder: 'quegr',
           thumb: 'CKD_344x290_CowHollowRetreat.jpg',
           order: 9,
           location: 'SAN FRANCISCO, CA',
@@ -231,6 +240,7 @@ export default {
           }
         },/*{
           url: 'weija',
+          folder: 'weija',
           thumb: 'CKD_344x290_PresidioHeights.jpg',
           location: 'SAN FRANCISCO, CA',
           hover: 'PRESIDIO HEIGHTS',
@@ -255,6 +265,7 @@ export default {
           }
         },*/ {
           url: 'seacliff',
+          folder: 'seacliff',
           thumb: 'CKD_Seacliff.jpg',
           location: 'SAN FRANCISCO, CA',
           featured: true,
