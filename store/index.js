@@ -1,3 +1,4 @@
+
 export const state = () => ({
     modal: false,
     menu: 'black',

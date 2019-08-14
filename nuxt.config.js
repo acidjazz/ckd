@@ -10,16 +10,16 @@ let config = {
 }
 
 let routes = []
-routes.push('/project/seacliff')
-routes.push('/project/sho17')
-routes.push('/project/parbr')
+routes.push('/project/hawaii')
+routes.push('/project/pacificheightscontemporary')
 routes.push('/project/brown')
-routes.push('/project/resma')
-routes.push('/project/shija')
-routes.push('/project/pacific')
-routes.push('/project/weija')
+routes.push('/project/woodside')
+routes.push('/project/sho17')
+routes.push('/project/jacksonsquare')
+routes.push('/project/pacificheightstownhouse')
 routes.push('/project/sho13')
-routes.push('/project/quegr')
+routes.push('/project/cowhollow')
+routes.push('/project/seacliff')
 
 module.exports = {
   /*
