@@ -33,8 +33,8 @@
       .column(v-in-viewport,v-if="page === 'Contact'")
         .block
           .title.is-c4b COME VISIT US
-          a(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") 2100 Bryant Street
-          a(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") San Francisco, CA 94110
+          a(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") 3450 Sacremento Street #519
+          a(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") San Francisco, CA 94118
 
     .copy.is-c4(v-in-viewport,v-if="page === 'Home'") Catherine Kwong Design specializes in high-end residential and hospitality projects, with an emphasis on modern architecture and custom detailing. The firm brings a fresh approach to elegant, tailored interiors-mixing modern with vintage; high art with personal treasures- to create moments of unexpected beauty.
 
