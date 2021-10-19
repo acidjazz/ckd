@@ -62,7 +62,7 @@ export default {
     background-image url('/banner.jpg')
   &.hero-Contact
     height 80vh
-    background-image url('/static/contact.jpg')
+    background-image url('/contact.jpg')
   > .container
     height 100%
 
