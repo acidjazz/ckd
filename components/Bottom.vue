@@ -13,7 +13,7 @@
       .copy CATHERINE KWONG DESIGN
       a.copy(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") 3450 Sacramento Street #519
       a.copy(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") san francisco, ca
-      a.copy(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") 9.4.1.1.=8
+      a.copy(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") 9.4.1.1.8
       //.bsocials
         a.social.social_pinterest pinterest
         .separator
