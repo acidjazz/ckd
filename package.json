@@ -18,7 +18,7 @@
   "dependencies": {
     "aeonian": "^1.1.3",
     "nuxt": "^2.3.4",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "vue-in-viewport-directive": "^1.3.0"
@@ -28,7 +28,7 @@
     "eslint": "^5.10.0",
     "eslint-loader": "^2.1.1",
     "eslint-plugin-vue": "^5.0.0",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "pug-plain-loader": "^1.0.0"
   }
 }
