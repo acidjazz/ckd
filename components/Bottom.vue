@@ -4,16 +4,16 @@
     .footer
       .copy.is-c1sb &copy; CATHERINE KWONG DESIGN, 2011
       .copy.is-c1sb
-        | SITE BY 
+        | SITE BY
         a(href="https://designsakestudio.com",target="_new") DESIGNSAKE STUDIO
-        |  &amp;  
+        |  &amp;
         a(href="https://256.io",target="_new") 256
 
     //.baddress
       .copy CATHERINE KWONG DESIGN
-      a.copy(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") 3450 Sacramento Street #519
-      a.copy(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") san francisco, ca
-      a.copy(href="https://goo.gl/maps/3g1zVkK1D3t",target="_new") 9.4.1.1.8
+      a.copy(href="https://goo.gl/maps/jKFZqnJU4P6c9",target="_new") 3450 Sacramento Street #519
+      a.copy(href="https://goo.gl/maps/jKFZqnJU4P6c9",target="_new") san francisco, ca
+      a.copy(href="https://goo.gl/maps/jKFZqnJU4P6c9",target="_new") 9.4.1.1.8
       //.bsocials
         a.social.social_pinterest pinterest
         .separator
