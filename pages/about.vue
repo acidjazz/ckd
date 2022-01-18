@@ -1,32 +1,91 @@
-<template lang="pug">
-#About.page
-  Card(page="About")
-  .container
-    .bigtitle.is-h1(v-in-viewport) ABOUT THE FIRM
-    .clear
-    .sections
-      .section
-        .thumb.thumb_residential(v-in-viewport)
-        .title.is-c4b(v-in-viewport) RESIDENTIAL
-        p(v-in-viewport) From San Francisco to Napa Valley, to Hawaii and beyond, we specialize in designing high-end residential interiors, with a focus on modern architecture and custom furniture and detailing.
-      .section
-        .thumb.thumb_hospitality(v-in-viewport)
-        .title.is-c4b(v-in-viewport) HOSPITALITY
-        p(v-in-viewport) We believe that a commercial space can still feel like a home - albeit one without all of that pesky laundry to do. We bring an elevated aesthetic and a healthy dose of fun to all of our hospitality projects.
-      .section
-        .thumb.thumb_lifestyle(v-in-viewport)
-        .title.is-c4b(v-in-viewport) LIFESTYLE
-        p(v-in-viewport) Whether it's organizing a big launch event or styling an intimate family photo shoot, we are happy to step in to take care of all the details for you. Life should be celebrated, and we're here to help.
-      .clear
-    .bigtitle.is-h1(v-in-viewport) ABOUT THE PRINCIPAL
-    .clear
-    .principal
-      .image(v-in-viewport)
-        .inner
-      .copy(v-in-viewport)
-        .inner Catherine Kwong started her career in New York, designing luxury interiors for Studio Sofield and flagship stores for Ralph Lauren. After many amazing years of learning and creating in the city that never sleeps, she moved home to her beloved San Francisco, and Catherine Kwong Design was open for business in 2011. Over the course of her career, Catherine has worked on interior design projects all over the world, some of which have been featured in Architectural Digest, Town and Country, and House Beautiful, among others. She has had the opportunity to work for and learn from such legendary designers as Bill Sofield, Ralph Lauren, and Paul Vincent Wiseman. Catherine holds degrees from Brown University and Parsons School of Design. In 2015, Catherine was named "Designer to Watch" by Architectural Digest.
-      .clear
-
+<template>
+  <div
+    id="About"
+    class="page"
+  >
+    <Card page="About" />
+    <div class="container">
+      <div
+        v-in-viewport
+        class="bigtitle is-h1"
+      >
+        ABOUT THE FIRM
+      </div>
+      <div class="clear" />
+      <div class="sections">
+        <div class="section">
+          <div
+            v-in-viewport
+            class="thumb thumb_residential"
+          />
+          <div
+            v-in-viewport
+            class="title is-c4b"
+          >
+            RESIDENTIAL
+          </div>
+          <p v-in-viewport>
+            From San Francisco to Napa Valley, to Hawaii and beyond, we specialize in designing high-end residential interiors, with a focus on modern architecture and custom furniture and detailing.
+          </p>
+        </div>
+        <div class="section">
+          <div
+            v-in-viewport
+            class="thumb thumb_hospitality"
+          />
+          <div
+            v-in-viewport
+            class="title is-c4b"
+          >
+            HOSPITALITY
+          </div>
+          <p v-in-viewport>
+            We believe that a commercial space can still feel like a home - albeit one without all of that pesky laundry to do. We bring an elevated aesthetic and a healthy dose of fun to all of our hospitality projects.
+          </p>
+        </div>
+        <div class="section">
+          <div
+            v-in-viewport
+            class="thumb thumb_lifestyle"
+          />
+          <div
+            v-in-viewport
+            class="title is-c4b"
+          >
+            LIFESTYLE
+          </div>
+          <p v-in-viewport>
+            Whether it's organizing a big launch event or styling an intimate family photo shoot, we are happy to step in to take care of all the details for you. Life should be celebrated, and we're here to help.
+          </p>
+        </div>
+        <div class="clear" />
+      </div>
+      <div
+        v-in-viewport
+        class="bigtitle is-h1"
+      >
+        ABOUT THE PRINCIPAL
+      </div>
+      <div class="clear" />
+      <div class="principal">
+        <div
+          v-in-viewport
+          class="image"
+        >
+          <div class="inner" />
+        </div>
+        <div
+          v-in-viewport
+          class="copy"
+        >
+          <div class="inner">
+            Catherine Kwong started her career in New York, designing luxury interiors for Studio Sofield and flagship stores for Ralph Lauren. After many amazing years of learning and creating in the city that never sleeps, she moved home to her beloved San Francisco, and Catherine Kwong Design was open for business in 2011. Over the course of her career, Catherine has worked on interior design projects all over the world, some of which have been featured in Architectural Digest, Town and Country, and House Beautiful, among others. She has had the opportunity to work for and learn from such legendary designers as Bill Sofield, Ralph Lauren, and Paul Vincent Wiseman. Catherine holds degrees from Brown University and Parsons School of Design. In 2015, Catherine was named "Designer to Watch" by Architectural Digest.
+          </div>
+        </div>
+        <div class="clear" />
+      </div>
+    </div>
+  </div>
 </template>
 
 <style lang="stylus">
@@ -131,7 +190,7 @@
           width 100%
           float none
           > .inner
-            margin 30px 0 
+            margin 30px 0
 
 </style>
 

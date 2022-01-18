@@ -1,7 +1,11 @@
-<template lang="pug">
-#Contact.page
-  Hero(page="Contact")
-  Card(page="Contact")
+<template>
+  <div
+    id="Contact"
+    class="page"
+  >
+    <Hero page="Contact" />
+    <Card page="Contact" />
+  </div>
 </template>
 
 <script>

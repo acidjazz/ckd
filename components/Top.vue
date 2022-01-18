@@ -1,40 +1,82 @@
-<template lang="pug">
-#Top
-  .container
-    .burger(
-      @click="on = !on",
-      :class="{off: !on, on: on, white: ($store.state.menu === 'white' || on), black: $store.state.menu === 'black'}"
-    )
-      .lines
-        span
-        span
-        span
-        span
-  transition(name="fade")
-    .menu(v-if="on")
-      .container
-
-        router-link.seal(to="/",@click.native="on = false")
-          include ../static/seal.svg
-
-        .options
-          router-link.option(to="/",@click.native="scrollTo('#Projects')").is-h4 Projects
-          router-link.option(to="/about",@click.native="on = false").is-h4 About
-          router-link.option(to="/press",@click.native="on = false").is-h4 Press
-          router-link.option(to="/contact",@click.native="on = false").is-h4 Contact
-          router-link.option(to="/careers",@click.native="on = false").is-h4 Careers
-
-        CAddress
-        Socials
-
+<template>
+  <div id="Top">
+    <div class="container">
+      <div
+        class="burger"
+        :class="{off: !on, on: on, white: ($store.state.menu === 'white' || on), black: $store.state.menu === 'black'}"
+        @click="on = !on"
+      >
+        <div class="lines">
+          <span />
+          <span />
+          <span />
+          <span />
+        </div>
+      </div>
+    </div>
+    <transition name="fade">
+      <div
+        v-if="on"
+        class="menu"
+      />
+      <div class="container">
+        <router-link
+          class="seal"
+          to="/"
+          @click.native="on = false"
+        >
+          <svg-seal />
+        </router-link>
+        <div class="options">
+          <router-link
+            class="option is-h4"
+            to="/"
+            @click.native="scrollTo('#Projects')"
+          >
+            Projects
+          </router-link>
+          <router-link
+            class="option is-h4"
+            to="/about"
+            @click.native="on = false"
+          >
+            About
+          </router-link>
+          <router-link
+            class="option is-h4"
+            to="/press"
+            @click.native="on = false"
+          >
+            Press
+          </router-link>
+          <router-link
+            class="option is-h4"
+            to="/contact"
+            @click.native="on = false"
+          >
+            Contact
+          </router-link>
+          <router-link
+            class="option is-h4"
+            to="/careers"
+            @click.native="on = false"
+          >
+            Careers
+          </router-link>
+        </div>
+        <CAddress />
+        <Socials />
+      </div>
+    </transition>
+  </div>
 </template>
-
 
 <script>
 import CAddress from '~/components/CAddress'
 import Socials from '~/components/Socials'
+import SvgSeal from './svg/SvgSeal'
 export default {
-  components: { CAddress, Socials },
+  components: {SvgSeal, CAddress, Socials },
   data () {
     return {
       on: false,

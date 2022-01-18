@@ -1,26 +1,46 @@
-<template lang="pug">
-section#Projects.section
-  .container
-    .title.is-h1.is-uppercase featured projects
-    .clear
-    br
-    nuxt-link.project-featured(to="/project/seacliff",v-in-viewport)
-      .project-image
-        img(:src="`/projects/${project_featured.thumb}`")
-      .project-detail
-        p {{ project_featured.hover }}
-    .projects
-      nuxt-link.project(
-        v-in-viewport,
-        v-for="project, index in projects",
-        v-if="!project.featured",
-        :to="`/project/${project.url}`",
-        :key="project.url")
-        .project-image
-          img(:src="`/projects/${project.thumb}`")
-        .project-detail
-          p {{ project.hover }}
-
+<template>
+  <section
+    id="Projects"
+    class="section"
+  >
+    <div class="container">
+      <div class="title is-h1 is-uppercase">
+        featured projects
+      </div>
+      <div class="clear" /><br>
+      <nuxt-link
+        v-in-viewport
+        class="project-featured"
+        to="/project/seacliff"
+      >
+        <div class="project-image">
+          <img :src="`/projects/${project_featured.thumb}`">
+        </div>
+        <div class="project-detail">
+          <p>{{ project_featured.hover }}</p>
+        </div>
+      </nuxt-link>
+      <div class="projects">
+        <nuxt-link
+          v-for="project in projects_not_featured"
+          :key="project.url"
+          v-in-viewport
+          class="project"
+          :to="`/project/${project.url}`"
+        >
+          <div class="project-image">
+            <img
+              :src="`/projects/${project.thumb}`"
+              alt="Project"
+            >
+          </div>
+          <div class="project-detail">
+            <p>{{ project.hover }}</p>
+          </div>
+        </nuxt-link>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -37,6 +57,9 @@ export default {
         }
       }
       return false
+    },
+    projects_not_featured () {
+      return this.projects.map(p => !p.featured)
     },
   },
 }

@@ -1,8 +1,12 @@
-<template lang="pug">
-#Index.page
-  Hero
-  Card(page="Home")
-  Projects
+<template>
+  <div
+    id="Index"
+    class="page"
+  >
+    <Hero />
+    <Card page="Home" />
+    <Projects />
+  </div>
 </template>
 
 <script>

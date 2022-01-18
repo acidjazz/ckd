@@ -1,4 +1,3 @@
-<template lang="pug">
-.page.page_guide
-
+<template>
+  <div class="page page_guide" />
 </template>

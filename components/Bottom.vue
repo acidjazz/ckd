@@ -1,24 +1,26 @@
-<template lang="pug">
-#Bottom.is-c1sb
-  .container
-    .footer
-      .copy.is-c1sb &copy; CATHERINE KWONG DESIGN, 2011
-      .copy.is-c1sb
-        | SITE BY
-        a(href="https://designsakestudio.com",target="_new") DESIGNSAKE STUDIO
-        |  &amp;
-        a(href="https://256.io",target="_new") 256
-
-    //.baddress
-      .copy CATHERINE KWONG DESIGN
-      a.copy(href="https://goo.gl/maps/jKFZqnJU4P6c9",target="_new") 3450 Sacramento Street #519
-      a.copy(href="https://goo.gl/maps/jKFZqnJU4P6c9",target="_new") san francisco, ca
-      a.copy(href="https://goo.gl/maps/jKFZqnJU4P6c9",target="_new") 9.4.1.1.8
-      //.bsocials
-        a.social.social_pinterest pinterest
-        .separator
-        a.social.social_instagram instagram
-    .clear
+<template>
+  <div
+    id="Bottom"
+    class="is-c1sb"
+  >
+    <div class="container">
+      <div class="footer">
+        <div class="copy is-c1sb">
+          &copy; CATHERINE KWONG DESIGN, 2011
+        </div>
+        <div class="copy is-c1sb">
+          SITE BY<a
+            href="https://designsakestudio.com"
+            target="_new"
+          >DESIGNSAKE STUDIO</a> &amp;<a
+            href="https://256.io"
+            target="_new"
+          >256</a>
+        </div>
+      </div>
+      <div class="clear" />
+    </div>
+  </div>
 </template>
 
 <style lang="stylus">

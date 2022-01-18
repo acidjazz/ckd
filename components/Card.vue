@@ -32,7 +32,7 @@
 
       .column(v-in-viewport,v-if="page === 'Contact'")
         .block
-          .title.is-c4b COME VISIT US
+          .title.is-c4b MAILING ADDRESS
           a(href="https://goo.gl/maps/jKFZqnJU4P6c9",target="_new") 3450 Sacramento Street #519
           a(href="https://goo.gl/maps/jKFZqnJU4P6c9",target="_new") San Francisco, CA 94118
 
