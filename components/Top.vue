@@ -18,54 +18,55 @@
       <div
         v-if="on"
         class="menu"
-      />
-      <div class="container">
-        <router-link
-          class="seal"
-          to="/"
-          @click.native="on = false"
-        >
-          <svg-seal />
-        </router-link>
-        <div class="options">
+      >
+        <div class="container">
           <router-link
-            class="option is-h4"
+            class="seal"
             to="/"
-            @click.native="scrollTo('#Projects')"
-          >
-            Projects
-          </router-link>
-          <router-link
-            class="option is-h4"
-            to="/about"
             @click.native="on = false"
           >
-            About
+            <svg-seal />
           </router-link>
-          <router-link
-            class="option is-h4"
-            to="/press"
-            @click.native="on = false"
-          >
-            Press
-          </router-link>
-          <router-link
-            class="option is-h4"
-            to="/contact"
-            @click.native="on = false"
-          >
-            Contact
-          </router-link>
-          <router-link
-            class="option is-h4"
-            to="/careers"
-            @click.native="on = false"
-          >
-            Careers
-          </router-link>
+          <div class="options">
+            <router-link
+              class="option is-h4"
+              to="/"
+              @click.native="scrollTo('#Projects')"
+            >
+              Projects
+            </router-link>
+            <router-link
+              class="option is-h4"
+              to="/about"
+              @click.native="on = false"
+            >
+              About
+            </router-link>
+            <router-link
+              class="option is-h4"
+              to="/press"
+              @click.native="on = false"
+            >
+              Press
+            </router-link>
+            <router-link
+              class="option is-h4"
+              to="/contact"
+              @click.native="on = false"
+            >
+              Contact
+            </router-link>
+            <router-link
+              class="option is-h4"
+              to="/careers"
+              @click.native="on = false"
+            >
+              Careers
+            </router-link>
+          </div>
+          <CAddress />
+          <Socials />
         </div>
-        <CAddress />
-        <Socials />
       </div>
     </transition>
   </div>

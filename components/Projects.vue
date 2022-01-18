@@ -59,7 +59,7 @@ export default {
       return false
     },
     projects_not_featured () {
-      return this.projects.map(p => !p.featured)
+      return this.projects.filter(project => !project.featured)
     },
   },
 }
