@@ -22,6 +22,8 @@ routes.push('/project/cowhollow')
 routes.push('/project/seacliff')
 
 module.exports = {
+
+  target: 'static',
   /*
   ** Headers
   */
