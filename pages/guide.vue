@@ -1,6 +1,7 @@
-
-<template lang="pug">
-.page.page_index
+<template>
+  <div class="page page_index">
+    <guide />
+  </div>
 </template>
 
 <script>

@@ -1,36 +1,96 @@
-<template lang="pug">
-#Press.page
-  Card(page="Press")
-  .container
-    .press
-      .kit(v-in-viewport)
-        .image.image_sunset
-        p.is-c4b SUNSET | October 2017
-      .kit(v-in-viewport)
-        .image.image_modern
-        p.is-c4b SAN FRANCISCO | Fall 2017
-      .kit(v-in-viewport)
-        .image.image_elle1
-        p.is-c4b ELLE DECOR | September 2017
-      .kit(v-in-viewport)
-        .image.image_cali
-        p.is-c4b CALIFORNIA HOMES | Summer 2017
-      .kit(v-in-viewport)
-        .image.image_luxe
-        p.is-c4b LUXE | January/February 2017
-      .kit(v-in-viewport)
-        .image.image_digest
-        p.is-c4b ARCHITECTURAL DIGEST | January 2015
-      .kit(v-in-viewport)
-        .image.image_ca
-        p.is-c4b CA HOME AND DESIGN | Spring 2014
-      .kit(v-in-viewport)
-        .image.image_7x7
-        p.is-c4b 7x7 | October 2013
-      .kit(v-in-viewport)
-        .image.image_house
-        p.is-c4b HOUSE BEAUTIFUL | September 2012
-      .clear
+<template>
+  <div
+    id="Press"
+    class="page"
+  >
+    <Card page="Press" />
+    <div class="container">
+      <div class="press">
+        <div
+          v-in-viewport
+          class="kit"
+        >
+          <div class="image image_sunset" />
+          <p class="is-c4b">
+            SUNSET | October 2017
+          </p>
+        </div>
+        <div
+          v-in-viewport
+          class="kit"
+        >
+          <div class="image image_modern" />
+          <p class="is-c4b">
+            SAN FRANCISCO | Fall 2017
+          </p>
+        </div>
+        <div
+          v-in-viewport
+          class="kit"
+        >
+          <div class="image image_elle1" />
+          <p class="is-c4b">
+            ELLE DECOR | September 2017
+          </p>
+        </div>
+        <div
+          v-in-viewport
+          class="kit"
+        >
+          <div class="image image_cali" />
+          <p class="is-c4b">
+            CALIFORNIA HOMES | Summer 2017
+          </p>
+        </div>
+        <div
+          v-in-viewport
+          class="kit"
+        >
+          <div class="image image_luxe" />
+          <p class="is-c4b">
+            LUXE | January/February 2017
+          </p>
+        </div>
+        <div
+          v-in-viewport
+          class="kit"
+        >
+          <div class="image image_digest" />
+          <p class="is-c4b">
+            ARCHITECTURAL DIGEST | January 2015
+          </p>
+        </div>
+        <div
+          v-in-viewport
+          class="kit"
+        >
+          <div class="image image_ca" />
+          <p class="is-c4b">
+            CA HOME AND DESIGN | Spring 2014
+          </p>
+        </div>
+        <div
+          v-in-viewport
+          class="kit"
+        >
+          <div class="image image_7x7" />
+          <p class="is-c4b">
+            7x7 | October 2013
+          </p>
+        </div>
+        <div
+          v-in-viewport
+          class="kit"
+        >
+          <div class="image image_house" />
+          <p class="is-c4b">
+            HOUSE BEAUTIFUL | September 2012
+          </p>
+        </div>
+        <div class="clear" />
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>

@@ -1,38 +1,75 @@
-<template lang="pug">
-#Project.page
-  .banner
-    .container
-      .location.is-h3(v-in-viewport) {{ project.location }}
-      //.image(:style="`width: ${project.hero.width}px; height: ${project.hero.height}px;`")
-      .image.no-parallax(
-        :style="`background-image: url(/projects/${project.folder}/${project.hero.file})`",
+<template>
+  <div
+    id="Project"
+    class="page"
+  >
+    <div class="banner">
+      <div class="container">
+        <div
+          v-in-viewport
+          class="location is-h3"
+        >
+          {{ project.location }}
+        </div>
+        <div
+          v-in-viewport
+          class="image no-parallax"
+          :style="`background-image: url(/projects/${project.folder}/${project.hero.file})`"
+        >
+          <img :src="`/projects/${project.folder}/${project.hero.file}`">
+        </div>
+      </div>
+    </div>
+    <div class="body">
+      <div
         v-in-viewport
-      )
-        img(:src="`/projects/${project.folder}/${project.hero.file}`")
-
-  .body
-    .title.is-h1b(v-in-viewport) {{ project.title }}
-    .copy(v-if="project.copy",v-in-viewport) {{ project.copy }}
-
-  .gallery
-    .tile(
-      v-for="image, file in project.images",
-      :class="image.ises"
-      )
-      .image(
-        v-in-viewport,
-        :style="`width: ${image.width}px; height: ${image.height}px; background-image: url(/projects/${project.folder}/${file})`"
-      )
-        img(:src="`/projects/${project.folder}/${file}`")
-
-    .clear
-
-  .nav.is-c4
-    .container
-      router-link.cta.prev(:to="`/project/${previous_project.url}`") &lt; PREVIOUS
-      router-link.cta.next(:to="`/project/${next_project.url}`") NEXT &gt;
-    .clear
-
+        class="title is-h1b"
+      >
+        {{ project.title }}
+      </div>
+      <div
+        v-if="project.copy"
+        v-in-viewport
+        class="copy"
+      >
+        {{ project.copy }}
+      </div>
+    </div>
+    <div class="gallery">
+      <div
+        v-for="(image, file) in project.images"
+        :key="file"
+        class="tile"
+        :class="image.ises"
+      >
+        <div
+          v-in-viewport
+          class="image"
+          :style="`width: ${image.width}px; height: ${image.height}px; background-image: url(/projects/${project.folder}/${file})`"
+        >
+          <img :src="`/projects/${project.folder}/${file}`">
+        </div>
+      </div>
+      <div class="clear" />
+    </div>
+    <div class="nav is-c4">
+      <div class="container">
+        <router-link
+          class="cta prev"
+          :to="`/project/${previous_project.url}`"
+        >
+          &lt; PREVIOUS
+        </router-link>
+        <router-link
+          class="cta next"
+          :to="`/project/${next_project.url}`"
+        >
+          NEXT &gt;
+        </router-link>
+      </div>
+      <div class="clear" />
+    </div>
+  </div>
 </template>
 
 <style lang="stylus">

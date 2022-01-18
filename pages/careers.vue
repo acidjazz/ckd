@@ -1,53 +1,101 @@
-<template lang="pug">
-#Jobs.page
-  Card(page="Jobs")
-  .container
-    .bigtitle.is-h1(v-in-viewport.once) Open Positions
-    .clear
-
-    .jobs-list
-      .job
-        .title.is-h4(v-in-viewport.once) DESIGNER  
-
-        .subtitle.is-h2(v-in-viewport.once) Responsibilities
-        ul(v-in-viewport.once)
-          li Work directly with Principal to design and manage projects
-          li Lead teams through all phases of projects: programming client needs, conceptual design, design development, purchasing + production, project management, and installation
-          li Source furnishings + artwork, as well as design custom pieces
-          li Coordinate directly with clients to keep projects running smoothly and on time
-          li Work with vendors and artists to keep projects running smoothly and on time
-          li Contribute to the firm in a way that pushes us to constantly elevate our work and our style
-        .subtitle.is-h2(v-in-viewport.once) Qualifications
-        ul(v-in-viewport.once)
-          li 4+ years experience
-          li Degree in Interior Design or Interior Architecture
-          li Proficiency in AutoCAD, Sketchup, and Adobe Creative Suite
-          li Proficiency in construction documents and details
-          li Proficiency in purchasing systems
-          li Strong visual communication style
-          li Strong sense of organization and professionalism
-
-      .job
-        .title.is-h1(v-in-viewport.once) DESIGN ASSISTANT
-        .subtitle.is-h2(v-in-viewport.once) Responsibilities
-        ul(v-in-viewport.once)
-          li Work directly with Designers to assist with the design and management of projects
-          li Assist teams with design development, purchasing + production, project management, and installation of projects
-          li Coordinate with Designers to keep projects running smoothly and on time
-          li Work with vendors and artists to keep projects running smoothly and on time
-          li Oversee office management duties to keep teams organized and informed
-
-        .subtitle.is-h2(v-in-viewport.once) Qualifications
-        ul(v-in-viewport.once)
-          li 1+ years experience
-          li Degree in Interior Design or Interior Architecture
-          li Proficiency in AutoCAD, Sketchup, and Adobe Creative Suite
-          li Strong visual communication style
-          li Strong sense of organization and professionalism
-
-    .apply(v-in-viewport.once) To apply for a position, please submit a resume and portfolio to 
-      a(href="mailto:careers@catherinekwong.com").is-bunker careers@catherinekwong.com.
-
+<template>
+  <div
+    id="Jobs"
+    class="page"
+  >
+    <Card page="Jobs" />
+    <div class="container">
+      <div
+        v-in-viewport.once
+        class="bigtitle is-h1"
+      >
+        Open Positions
+      </div>
+      <div class="clear" />
+      <div class="jobs-list">
+        <div class="job">
+          <div
+            v-in-viewport.once
+            class="title is-h4"
+          >
+            DESIGNER
+          </div>
+          <div
+            v-in-viewport.once
+            class="subtitle is-h2"
+          >
+            Responsibilities
+          </div>
+          <ul v-in-viewport.once>
+            <li>Work directly with Principal to design and manage projects</li>
+            <li>Lead teams through all phases of projects: programming client needs, conceptual design, design development, purchasing + production, project management, and installation</li>
+            <li>Source furnishings + artwork, as well as design custom pieces</li>
+            <li>Coordinate directly with clients to keep projects running smoothly and on time</li>
+            <li>Work with vendors and artists to keep projects running smoothly and on time</li>
+            <li>Contribute to the firm in a way that pushes us to constantly elevate our work and our style</li>
+          </ul>
+          <div
+            v-in-viewport.once
+            class="subtitle is-h2"
+          >
+            Qualifications
+          </div>
+          <ul v-in-viewport.once>
+            <li>4+ years experience</li>
+            <li>Degree in Interior Design or Interior Architecture</li>
+            <li>Proficiency in AutoCAD, Sketchup, and Adobe Creative Suite</li>
+            <li>Proficiency in construction documents and details</li>
+            <li>Proficiency in purchasing systems</li>
+            <li>Strong visual communication style</li>
+            <li>Strong sense of organization and professionalism</li>
+          </ul>
+        </div>
+        <div class="job">
+          <div
+            v-in-viewport.once
+            class="title is-h1"
+          >
+            DESIGN ASSISTANT
+          </div>
+          <div
+            v-in-viewport.once
+            class="subtitle is-h2"
+          >
+            Responsibilities
+          </div>
+          <ul v-in-viewport.once>
+            <li>Work directly with Designers to assist with the design and management of projects</li>
+            <li>Assist teams with design development, purchasing + production, project management, and installation of projects</li>
+            <li>Coordinate with Designers to keep projects running smoothly and on time</li>
+            <li>Work with vendors and artists to keep projects running smoothly and on time</li>
+            <li>Oversee office management duties to keep teams organized and informed</li>
+          </ul>
+          <div
+            v-in-viewport.once
+            class="subtitle is-h2"
+          >
+            Qualifications
+          </div>
+          <ul v-in-viewport.once>
+            <li>1+ years experience</li>
+            <li>Degree in Interior Design or Interior Architecture</li>
+            <li>Proficiency in AutoCAD, Sketchup, and Adobe Creative Suite</li>
+            <li>Strong visual communication style</li>
+            <li>Strong sense of organization and professionalism</li>
+          </ul>
+        </div>
+      </div>
+      <div
+        v-in-viewport.once
+        class="apply"
+      >
+        To apply for a position, please submit a resume and portfolio to <a
+          class="is-bunker"
+          href="mailto:careers@catherinekwong.com"
+        >careers@catherinekwong.com.</a>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>

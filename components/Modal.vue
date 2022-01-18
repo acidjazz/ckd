@@ -1,9 +1,20 @@
-<template lang="pug">
-transition(name="animodal")
-  .modal.is-active(v-if="modal")
-    .modal-background(@click="$store.commit('modalOff')")
-    .modal-content
-      .content coming soon
+<template>
+  <transition name="animodal">
+    <div
+      v-if="modal"
+      class="modal is-active"
+    >
+      <div
+        class="modal-background"
+        @click="$store.commit('modalOff')"
+      />
+      <div class="modal-content">
+        <div class="content">
+          coming soon
+        </div>
+      </div>
+    </div>
+  </transition>
 </template>
 
 <script>
