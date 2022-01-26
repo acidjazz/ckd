@@ -22,6 +22,8 @@ routes.push('/project/cowhollow')
 routes.push('/project/seacliff')
 
 module.exports = {
+
+  target: 'static',
   /*
   ** Headers
   */
@@ -76,7 +78,6 @@ module.exports = {
   build: {
     /*
     ** Run ESLINT on save
-    */
     extend (config, ctx) {
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
@@ -87,6 +88,7 @@ module.exports = {
         })
       }
     }
+    */
   },
   generate: { routes: routes }
 }

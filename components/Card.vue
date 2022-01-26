@@ -1,44 +1,113 @@
-<template lang="pug">
-.card.is-bg-iceberg
-  .container
-    .title.is-froly(v-in-viewport,v-if="page === 'Home'") established 2011
-    .title.is-froly.title-contact(v-in-viewport,v-if="page === 'Contact'") contact
-    .title.is-froly.title-press(v-in-viewport,v-if="page === 'Press'") press
-    .title.is-froly.title-about(v-in-viewport,v-if="page === 'About'") about
-    .title.is-froly.title-about(v-in-viewport,v-if="page === 'Jobs'") careers
-
-    .quote(v-in-viewport,v-if="page === 'About'")
-      p Catherine’s talents and strengths place her amidst the upper echelons of an emerging generation of young designers.
-      i — William Sofield
-    .quote(v-in-viewport,v-if="page === 'Press'")
-      p Kwong’s keen interest in modern architecture informs her inviting yet disciplined interiors, where the subtlest nuances sing.
-      i - Architectual Digest
-    .quote(v-in-viewport,v-if="page === 'Jobs'")
-      p Measure twice, cut once.
-      // i — William Sofield
-
-    .columns
-
-      .column(v-in-viewport,v-if="page === 'Contact'")
-        .block
-          .title.is-c4b GIVE US A CALL
-          a(href="tel:4157355109") 415.735.5190
-
-      .column(v-in-viewport,v-if="page === 'Contact'")
-        .block
-          .title.is-c4b DROP US A LINE
-          a(href="mailto:hello@catherinekwong.com") E-mail
-          a(href="mailto:media@catherinekwong.com") Media Inquries
-
-      .column(v-in-viewport,v-if="page === 'Contact'")
-        .block
-          .title.is-c4b COME VISIT US
-          a(href="https://goo.gl/maps/jKFZqnJU4P6c9",target="_new") 3450 Sacramento Street #519
-          a(href="https://goo.gl/maps/jKFZqnJU4P6c9",target="_new") San Francisco, CA 94118
-
-    .copy.is-c4(v-in-viewport,v-if="page === 'Home'") Catherine Kwong Design specializes in high-end residential and hospitality projects, with an emphasis on modern architecture and custom detailing. The firm brings a fresh approach to elegant, tailored interiors-mixing modern with vintage; high art with personal treasures- to create moments of unexpected beauty.
-
-    .clear
+<template>
+  <div class="card is-bg-iceberg">
+    <div class="container">
+      <div
+        v-if="page === 'Home'"
+        v-in-viewport
+        class="title is-froly"
+      >
+        established 2011
+      </div>
+      <div
+        v-if="page === 'Contact'"
+        v-in-viewport
+        class="title is-froly title-contact"
+      >
+        contact
+      </div>
+      <div
+        v-if="page === 'Press'"
+        v-in-viewport
+        class="title is-froly title-press"
+      >
+        press
+      </div>
+      <div
+        v-if="page === 'About'"
+        v-in-viewport
+        class="title is-froly title-about"
+      >
+        about
+      </div>
+      <div
+        v-if="page === 'Jobs'"
+        v-in-viewport
+        class="title is-froly title-about"
+      >
+        careers
+      </div>
+      <div
+        v-if="page === 'About'"
+        v-in-viewport
+        class="quote"
+      >
+        <p>Catherine’s talents and strengths place her amidst the upper echelons of an emerging generation of young designers.</p><i>— William Sofield</i>
+      </div>
+      <div
+        v-if="page === 'Press'"
+        v-in-viewport
+        class="quote"
+      >
+        <p>Kwong’s keen interest in modern architecture informs her inviting yet disciplined interiors, where the subtlest nuances sing.</p><i>- Architectual Digest</i>
+      </div>
+      <div
+        v-if="page === 'Jobs'"
+        v-in-viewport
+        class="quote"
+      >
+        <p>Measure twice, cut once.</p>
+      </div>
+      <div class="columns">
+        <div
+          v-if="page === 'Contact'"
+          v-in-viewport
+          class="column"
+        >
+          <div class="block">
+            <div class="title is-c4b">
+              GIVE US A CALL
+            </div><a href="tel:4157355109">415.735.5190</a>
+          </div>
+        </div>
+        <div
+          v-if="page === 'Contact'"
+          v-in-viewport
+          class="column"
+        >
+          <div class="block">
+            <div class="title is-c4b">
+              DROP US A LINE
+            </div><a href="mailto:hello@catherinekwong.com">E-mail</a><a href="mailto:media@catherinekwong.com">Media Inquries</a>
+          </div>
+        </div>
+        <div
+          v-if="page === 'Contact'"
+          v-in-viewport
+          class="column"
+        >
+          <div class="block">
+            <div class="title is-c4b">
+              SEND US MAIL
+            </div><a
+              href="https://goo.gl/maps/jKFZqnJU4P6c9"
+              target="_new"
+            >3450 Sacramento Street #519</a><a
+              href="https://goo.gl/maps/jKFZqnJU4P6c9"
+              target="_new"
+            >San Francisco, CA 94118</a>
+          </div>
+        </div>
+      </div>
+      <div
+        v-if="page === 'Home'"
+        v-in-viewport
+        class="copy is-c4"
+      >
+        Catherine Kwong Design specializes in high-end residential and hospitality projects, with an emphasis on modern architecture and custom detailing. The firm brings a fresh approach to elegant, tailored interiors-mixing modern with vintage; high art with personal treasures- to create moments of unexpected beauty.
+      </div>
+      <div class="clear" />
+    </div>
+  </div>
 </template>
 
 <style lang="stylus">

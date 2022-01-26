@@ -17,6 +17,12 @@ master | staging
 --- | --- 
 [![CircleCI](https://circleci.com/gh/acidjazz/ckd/tree/master.svg?style=shield)](https://circleci.com/gh/acidjazz/ckd/tree/master) | [![CircleCI](https://circleci.com/gh/acidjazz/ckd/tree/staging.svg?style=shield)](https://circleci.com/gh/acidjazz/ckd/tree/staging)
 
+
+## Stack and packages detail
+* [VueJS](https://vuejs.org/)  v2.x
+* [NuxtJS](https://nuxtjs.org/) v2.15.8
+* [Stylus](https://stylus-lang.com/) v0.56.0
+
 ## Local Build Setup
 * Clone this repository 
 ```bash

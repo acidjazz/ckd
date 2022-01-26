@@ -1,9 +1,10 @@
-<template lang="pug">
-  #CKD
-    Top
-    nuxt
-    Bottom
-    Modal
+<template>
+  <div id="CKD">
+    <top />
+    <nuxt />
+    <bottom />
+    <modal />
+  </div>
 </template>
 
 <script>

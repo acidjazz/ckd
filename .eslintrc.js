@@ -5,18 +5,15 @@ module.exports = {
     node: true
   },
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: '@babel/eslint-parser',
+    requireConfigFile: false
   },
   extends: [
-    'plugin:vue/recommended'
+    '@nuxtjs',
+    'plugin:nuxt/recommended'
   ],
-  // required to lint *.vue files
   plugins: [
-    'vue'
   ],
   // add your custom rules here
-  rules: {
-    'no-console': process.env.APP_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.APP_ENV === 'production' ? 'error' : 'off'
-  }
+  rules: {}
 }

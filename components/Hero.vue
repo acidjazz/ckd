@@ -1,23 +1,47 @@
-<template lang="pug">
-.hero(v-on:scroll="scroll()",:class="{'hero-Home': page === 'Home', 'hero-Contact': page === 'Contact'}")
-  .container
-    .seal(v-if="page === 'Home'",v-in-viewport)
-      include ../static/seal.svg
 
-    .logo(v-if="page === 'Home'",v-in-viewport)
-      img(src="/logo.svg")
-
-    CAddress(v-if="page === 'Home'",v-in-viewport)
-    Socials(v-if="page === 'Home'",v-in-viewport)
+<template>
+  <div
+    class="hero"
+    :class="{'hero-Home': page === 'Home', 'hero-Contact': page === 'Contact'}"
+    @scroll="scroll()"
+  >
+    <div class="container">
+      <div
+        v-if="page === 'Home'"
+        class="seal"
+      >
+        <svg-seal />
+      </div>
+      <div
+        v-if="page === 'Home'"
+        v-in-viewport
+        class="logo"
+      >
+        <img
+          src="/logo.svg"
+          alt="Logo"
+        >
+      </div>
+      <CAddress
+        v-if="page === 'Home'"
+        v-in-viewport
+      />
+      <Socials
+        v-if="page === 'Home'"
+        v-in-viewport
+      />
+    </div>
+  </div>
 </template>
 
 <script>
 import CAddress from '~/components/CAddress'
 import Socials from '~/components/Socials'
 import inViewportDirective from 'vue-in-viewport-directive'
+import SvgSeal from './svg/SvgSeal'
 export default {
   directives: { 'in-viewport': inViewportDirective },
-  components: { CAddress, Socials },
+  components: {SvgSeal, CAddress, Socials },
   props: {
     page: {
       type: String,
