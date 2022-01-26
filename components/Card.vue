@@ -87,7 +87,7 @@
         >
           <div class="block">
             <div class="title is-c4b">
-              MAILING ADDRESS
+              SEND US MAIL
             </div><a
               href="https://goo.gl/maps/jKFZqnJU4P6c9"
               target="_new"
