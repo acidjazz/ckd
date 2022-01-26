@@ -77,7 +77,7 @@
           <div class="block">
             <div class="title is-c4b">
               DROP US A LINE
-            </div><a href="mailto:hello@catherinekwong.com">E-mail</a><a href="mailto:media@catherinekwong.com">Media Inquries</a>
+            </div><a href="mailto:hello@catherinekwong.com">E-mail</a><a href="mailto:media@catherinekwong.com">Media Inquires</a>
           </div>
         </div>
         <div
